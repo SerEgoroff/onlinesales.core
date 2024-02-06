@@ -83,7 +83,7 @@ public class IdentityTests : BaseTestAutoLogin
     public async Task LockoutTest()
     {
         var config = Program.GetApp()!.Configuration;
-        var lockoutConfig = config.GetSection("DefaultUserLockout").Get<DefaultUserLockoutConfig>();
+        var lockoutConfig = config.GetSection("Identity").Get<IdentityConfig>();
         lockoutConfig.Should().NotBeNull();
 
         var testLoginDto = new LoginDto()
