@@ -131,7 +131,7 @@ public class IdentityTests : BaseTestAutoLogin
         using (var scope = App.Services.CreateScope())
         {
             var config = Program.GetApp()!.Configuration;
-            var lockoutConfig = config.GetSection("DefaultUserLockout").Get<DefaultUserLockoutConfig>();
+            var lockoutConfig = config.GetSection("Identity").Get<IdentityConfig>();
 
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
             Assert.NotNull(userManager);
