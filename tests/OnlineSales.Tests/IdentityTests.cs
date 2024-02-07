@@ -186,14 +186,15 @@ public class IdentityTests : BaseTestAutoLogin
     public async Task RefreshAccessTokenTest()
     {
         var token = await GetTokens(AdminLoginData);
+        token.Should().NotBeNull();
 
         var refreshDto = new RefreshTokenDto()
         { RefreshToken = token!.RefreshToken };
         var token2 = await PostTest<JWTokenDto>(RefreshApi, refreshDto, HttpStatusCode.OK);
 
         token2.Should().NotBeNull();
-        Assert.Equal(token.RefreshToken, token2!.RefreshToken);
-        Assert.NotEqual(token.AccessToken, token2!.AccessToken);
+        Assert.Equal(token!.RefreshToken, token2!.RefreshToken);
+        Assert.NotEqual(token!.AccessToken, token2!.AccessToken);
     }
 
     private async Task TestBody(string username, string password, HttpStatusCode expectedCode)

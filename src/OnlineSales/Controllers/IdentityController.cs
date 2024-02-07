@@ -1,7 +1,9 @@
 ﻿// <copyright file="IdentityController.cs" company="WavePoint Co. Ltd.">
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -20,8 +22,10 @@ namespace OnlineSales.Controllers;
 [Route("api/[controller]")]
 public class IdentityController : ControllerBase
 {
+    private const string SecretRefreshRole = "OnlineSalesSecretRefreshRole";
     private readonly SignInManager<User> signInManager;
     private readonly IOptions<JwtConfig> jwtConfig;
+    // private readonly string refreshTokenDummyHead = Guid.NewGuid().ToString();
 
     public IdentityController(SignInManager<User> signInManager, IOptions<JwtConfig> jwtConfig)
     {
@@ -109,19 +113,24 @@ public class IdentityController : ControllerBase
         }
 
         var authClaims = await GetAuthClaims(userManager, user);
-        var accessToken = GetAccessToken(authClaims);
-        var refreshToken = Guid.NewGuid().ToString();
-        var refreshValidTo = DateTime.UtcNow.AddMinutes(jwtConfig.Value.RefreshTokenExpiration);
+        var accessToken = GetToken(authClaims, jwtConfig.Value.AccessTokenExpiration);
 
-        user.RefreshToken = refreshToken;
+        var refreshClaims = new List<Claim>()
+        {
+            new Claim(ClaimTypes.Email, user.Email!),
+            new Claim(ClaimTypes.Role, SecretRefreshRole),
+        };
+        var refreshToken = GetToken(refreshClaims, jwtConfig.Value.RefreshTokenExpiration);
+
+        /*user.RefreshToken = refreshToken;
         user.RefreshTokenValidTo = refreshValidTo;
-        await userManager.UpdateAsync(user);
+        await userManager.UpdateAsync(user);*/
 
         return Ok(new JWTokenDto()
         {
             AccessToken = new JwtSecurityTokenHandler().WriteToken(accessToken),
             Expiration = accessToken.ValidTo,
-            RefreshToken = refreshToken,
+            RefreshToken = /*refreshTokenDummyHead + */new JwtSecurityTokenHandler().WriteToken(refreshToken),
             TokenType = JwtBearerDefaults.AuthenticationScheme,
         });
     }
@@ -131,12 +140,58 @@ public class IdentityController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status422UnprocessableEntity)]
-    public async Task<ActionResult> Refresh([FromBody] RefreshTokenDto input)
+    public async Task<ActionResult> Refresh([FromBody] string input)
     {
         var userManager = signInManager.UserManager;
 
-        var user = userManager.Users.Where(u => u.RefreshToken == input.RefreshToken).FirstOrDefault();
+        /*var header = HttpContext.Request.Headers.Authorization.FirstOrDefault();
+        if(header == null)
+        {
+            throw new IdentityException("Refresh token is not specified.");
+        }
 
+        var auth = AuthenticationHeaderValue.Parse(header);
+        if(auth == null || auth.Parameter == null || auth.Scheme != JwtBearerDefaults.AuthenticationScheme)
+        {
+            throw new UnauthorizedException();
+        }
+
+        var tokenString = auth.Parameter.Substring(refreshTokenDummyHead.Length);*/
+        var tokenString = input; // .Substring(refreshTokenDummyHead.Length);
+        // var token = new JwtSecurityTokenHandler().ReadJwtToken(tokenString);
+        var validationParameters = new TokenValidationParameters()
+        {
+            ValidateIssuer = true,
+            ValidIssuer = jwtConfig.Value.Issuer, // The issuer of the token
+
+            ValidateAudience = true,
+            ValidAudience = jwtConfig.Value.Audience, // The audience of the token
+
+            ValidateLifetime = true, // Validate the token's expiration
+
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtConfig.Value.Secret)), // The key used to sign the token
+
+            ClockSkew = TimeSpan.Zero, // Optional: adjust for clock skew if necessary
+        };
+
+        SecurityToken token;
+        var principal = new JwtSecurityTokenHandler().ValidateToken(tokenString, validationParameters, out token);
+        if(principal == null)
+        {
+            throw new UnauthorizedException();
+        }
+
+        var claims = principal.Claims;
+        var email = claims.FirstOrDefault(claim => claim.Type == ClaimTypes.Email);
+
+        // var email = HttpContext.User.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.Email);
+        if (email == null)
+        {
+            throw new UnauthorizedException();
+        }
+
+        var user = await userManager.FindByEmailAsync(email.Value);
         if (user == null)
         {
             throw new UnauthorizedException();
@@ -147,24 +202,25 @@ public class IdentityController : ControllerBase
             throw new IdentityException("Account locked out");
         }
 
-        if (user.RefreshTokenValidTo <= DateTime.UtcNow)
+        // if (user.RefreshTokenValidTo <= DateTime.UtcNow)
+        /*if (token.ValidTo <= DateTime.UtcNow)
         {
-            user.RefreshToken = null;
-            user.RefreshTokenValidTo = null;
-            await userManager.UpdateAsync(user);
+            // user.RefreshToken = null;
+            // user.RefreshTokenValidTo = null;
+            // await userManager.UpdateAsync(user);
 
             throw new UnauthorizedException();
-        }
+        }*/
 
         var authClaims = await GetAuthClaims(userManager, user);
 
-        var accessToken = GetAccessToken(authClaims);
+        var accessToken = GetToken(authClaims, jwtConfig.Value.AccessTokenExpiration);
 
         return Ok(new JWTokenDto()
         {
             AccessToken = new JwtSecurityTokenHandler().WriteToken(accessToken),
             Expiration = accessToken.ValidTo,
-            RefreshToken = input.RefreshToken,
+            RefreshToken = input,
             TokenType = JwtBearerDefaults.AuthenticationScheme,
         });
     }
@@ -188,14 +244,14 @@ public class IdentityController : ControllerBase
         return authClaims;
     }
 
-    private JwtSecurityToken GetAccessToken(List<Claim> authClaims)
+    private JwtSecurityToken GetToken(List<Claim> claims, double expireInMinutes)
     {
         var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtConfig.Value.Secret));
         var token = new JwtSecurityToken(
             issuer: jwtConfig.Value.Issuer,
             audience: jwtConfig.Value.Audience,
-            expires: DateTime.UtcNow.AddMinutes(jwtConfig.Value.AccessTokenExpiration),
-            claims: authClaims,
+            expires: DateTime.UtcNow.AddMinutes(expireInMinutes),
+            claims: claims,
             signingCredentials: new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256));
 
         return token;
