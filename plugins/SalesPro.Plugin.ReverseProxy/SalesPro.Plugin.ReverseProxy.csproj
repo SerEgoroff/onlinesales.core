@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <OutputPath>..\..\src\OnlineSales\bin\$(Configuration)\$(TargetFramework)\plugins\$(AssemblyName)</OutputPath>
+    <OutputPath>..\..\src\SalesPro\bin\$(Configuration)\$(TargetFramework)\plugins\$(AssemblyName)</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(Configuration)'!='Migration'">
-    <ProjectReference Include="..\..\src\OnlineSales\OnlineSales.csproj">
+    <ProjectReference Include="..\..\src\SalesPro\SalesPro.csproj">
       <Private>false</Private>
       <ExcludeAssets>runtime</ExcludeAssets>
     </ProjectReference>

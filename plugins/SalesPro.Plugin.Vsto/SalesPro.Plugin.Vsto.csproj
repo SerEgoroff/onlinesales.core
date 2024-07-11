@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <OutputPath>..\..\src\OnlineSales\bin\$(Configuration)\$(TargetFramework)\plugins\$(AssemblyName)</OutputPath>
+    <OutputPath>..\..\src\SalesPro\bin\$(Configuration)\$(TargetFramework)\plugins\$(AssemblyName)</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
@@ -21,7 +21,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)'!='Migration'">
-    <ProjectReference Include="..\..\src\OnlineSales\OnlineSales.csproj">
+    <ProjectReference Include="..\..\src\SalesPro\SalesPro.csproj">
       <Private>false</Private>
       <ExcludeAssets>runtime</ExcludeAssets>
     </ProjectReference>
@@ -33,7 +33,7 @@
 
   <!--This ItemGroup is required to support migration generating with the "dotnet ef migrations add" command-->
   <ItemGroup Condition="'$(Configuration)'=='Migration'">
-    <ProjectReference Include="..\..\src\OnlineSales\OnlineSales.csproj" />
+    <ProjectReference Include="..\..\src\SalesPro\SalesPro.csproj" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

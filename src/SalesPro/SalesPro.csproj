@@ -4,21 +4,21 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>OnlineSales</RootNamespace>
+    <RootNamespace>SalesPro</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <UserSecretsId>98270385-43f2-4d3c-98d5-02d0d77fc2d9</UserSecretsId>
     <ReleaseVersion>1.2.28-pre</ReleaseVersion>
-    <AssemblyName>OnlineSales</AssemblyName>
+    <AssemblyName>SalesPro</AssemblyName>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>OnlineSales</PackageId>
-    <Title>OnlineSales</Title>
+    <PackageId>SalesPro</PackageId>
+    <Title>SalesPro</Title>
     <Authors>WavePoint Co. Ltd.</Authors>
     <Company>WavePoint Co. Ltd.</Company>
-    <Product>OnlineSales</Product>
+    <Product>SalesPro</Product>
     <Copyright>@ 2022 WavePoint Co. Ltd.</Copyright>
-    <PackageProjectUrl>https://github.com/peterliapin/onlinesales-backend</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/peterliapin/SalesPro-backend</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/peterliapin/onlinesales-backend</RepositoryUrl>
+    <RepositoryUrl>https://github.com/peterliapin/SalesPro-backend</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>sales, commerce, backend</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
@@ -33,10 +33,10 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Migration|AnyCPU' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DocumentationFile>obj\Release\net7.0\OnlineSales.xml</DocumentationFile>
+    <DocumentationFile>obj\Release\net7.0\SalesPro.xml</DocumentationFile>
     <RunWithWarnings>true</RunWithWarnings>
     <CheckForOverflowUnderflow></CheckForOverflowUnderflow>
-    <DocumentationFile>obj\Release\net7.0\OnlineSales.xml</DocumentationFile>
+    <DocumentationFile>obj\Release\net7.0\SalesPro.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DistributedLock.Postgres" Version="1.0.5" />
@@ -101,7 +101,7 @@
   </ItemGroup>
 
   <ItemGroup Label="FilesToCopy">
-    <Content Include="OnlineSales.targets" PackagePath="build/OnlineSales.targets" />
+    <Content Include="SalesPro.targets" PackagePath="build/SalesPro.targets" />
   </ItemGroup>
 
   <ItemGroup>
