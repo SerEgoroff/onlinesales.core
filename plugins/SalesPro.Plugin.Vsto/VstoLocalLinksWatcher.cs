@@ -4,10 +4,10 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Quartz.Util;
 using SalesPro.Data;
 using SalesPro.Entities;
 using SalesPro.Plugin.Vsto.Data;
-using Quartz.Util;
 using Serilog;
 
 namespace SalesPro.Plugin.Vsto;

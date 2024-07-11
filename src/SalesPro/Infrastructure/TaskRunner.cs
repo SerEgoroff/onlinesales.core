@@ -4,10 +4,10 @@
 
 using Medallion.Threading.Postgres;
 using Microsoft.EntityFrameworkCore;
+using Quartz;
 using SalesPro.Data;
 using SalesPro.Entities;
 using SalesPro.Interfaces;
-using Quartz;
 
 namespace SalesPro.Infrastructure
 {
