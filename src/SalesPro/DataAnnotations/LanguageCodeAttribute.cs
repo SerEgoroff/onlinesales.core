@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Globalization;
 
-namespace OnlineSales.DataAnnotations;
+namespace SalesPro.DataAnnotations;
 
 public class LanguageCodeAttribute : ValidationAttribute
 {

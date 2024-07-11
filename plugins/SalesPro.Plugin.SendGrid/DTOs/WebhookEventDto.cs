@@ -4,7 +4,7 @@
 
 using Newtonsoft.Json;
 
-namespace OnlineSales.Plugin.SendGrid.DTOs;
+namespace SalesPro.Plugin.SendGrid.DTOs;
 
 public class WebhookEventDto : EmailDto
 {

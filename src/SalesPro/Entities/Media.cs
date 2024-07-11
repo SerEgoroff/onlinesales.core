@@ -4,9 +4,9 @@
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Entities
+namespace SalesPro.Entities
 {
     [Table("media")]
     public class Media : BaseEntity

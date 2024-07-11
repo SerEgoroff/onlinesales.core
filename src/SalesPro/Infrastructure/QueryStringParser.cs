@@ -3,9 +3,9 @@
 // </copyright>
 
 using System.Text.RegularExpressions;
-using OnlineSales.Entities;
+using SalesPro.Entities;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class QueryStringParser
     {

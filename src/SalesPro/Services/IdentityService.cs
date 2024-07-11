@@ -5,10 +5,10 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class IdentityService : IIdentityService
 {

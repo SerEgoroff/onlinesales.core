@@ -6,12 +6,12 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Helpers;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [Authorize]
 [Route("api/users")]

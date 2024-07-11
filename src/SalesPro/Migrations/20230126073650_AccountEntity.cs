@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace OnlineSales.Migrations
+namespace SalesPro.Migrations
 {
     /// <inheritdoc />
     public partial class AccountEntity : Migration

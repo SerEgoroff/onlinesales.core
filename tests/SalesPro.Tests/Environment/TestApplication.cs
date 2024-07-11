@@ -2,24 +2,18 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using System.Text;
 using AutoMapper;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
 using Nest;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Plugin.TestPlugin.Data;
-using OnlineSales.Tests.TestServices;
+using SalesPro.Data;
+using SalesPro.Plugin.TestPlugin.Data;
+using SalesPro.Tests.TestServices;
 
-namespace OnlineSales.Tests.Environment;
+namespace SalesPro.Tests.Environment;
 
 public class TestApplication : WebApplicationFactory<Program>
 {

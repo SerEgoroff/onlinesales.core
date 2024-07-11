@@ -5,9 +5,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 
 [Table("link")]
 [Index(nameof(Uid), IsUnique = true)]

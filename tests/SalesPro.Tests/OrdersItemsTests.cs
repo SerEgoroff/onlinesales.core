@@ -4,7 +4,7 @@
 
 using System.Text.Json;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class OrdersItemsTests : TableWithFKTests<OrderItem, TestOrderItem, OrderItemUpdateDto, IEntityService<OrderItem>>
 {

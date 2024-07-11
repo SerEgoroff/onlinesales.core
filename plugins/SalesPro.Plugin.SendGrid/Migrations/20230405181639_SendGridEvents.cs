@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.SendGrid.Migrations
+namespace SalesPro.Plugin.SendGrid.Migrations
 {
     /// <inheritdoc />
     public partial class SendGridEvents : Migration

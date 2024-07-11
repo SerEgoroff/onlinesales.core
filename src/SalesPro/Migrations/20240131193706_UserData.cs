@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace OnlineSales.Migrations
+namespace SalesPro.Migrations
 {
     /// <inheritdoc />
     public partial class UserData : Migration

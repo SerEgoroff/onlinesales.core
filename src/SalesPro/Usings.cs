@@ -3,5 +3,5 @@
 // </copyright>
 
 global using System;
-global using OnlineSales.Exceptions;
+global using SalesPro.Exceptions;
 global using Serilog;

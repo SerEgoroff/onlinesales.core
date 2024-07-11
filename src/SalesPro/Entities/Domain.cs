@@ -7,9 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Nest;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 public enum AccountSyncStatus
 {
     NotIntended = 0,

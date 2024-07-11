@@ -7,11 +7,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
-using OnlineSales.Data;
-using OnlineSales.Plugin.Vsto.Configuration;
-using OnlineSales.Plugin.Vsto.Data;
+using SalesPro.Data;
+using SalesPro.Plugin.Vsto.Configuration;
+using SalesPro.Plugin.Vsto.Data;
 
-namespace OnlineSales.Plugin.Vsto;
+namespace SalesPro.Plugin.Vsto;
 
 public class VstoPlugin : IPlugin, IPluginApplication, IDisposable
 {

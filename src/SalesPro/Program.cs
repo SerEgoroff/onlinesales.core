@@ -9,21 +9,21 @@ using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Formatters.Csv;
-using OnlineSales.Helpers;
-using OnlineSales.Infrastructure;
-using OnlineSales.Interfaces;
-using OnlineSales.Services;
-using OnlineSales.Tasks;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Formatters.Csv;
+using SalesPro.Helpers;
+using SalesPro.Infrastructure;
+using SalesPro.Interfaces;
+using SalesPro.Services;
+using SalesPro.Tasks;
 using Quartz;
 using Serilog.Exceptions;
 using Serilog.Sinks.Elasticsearch;
 using SwaggerFilters;
 
-namespace OnlineSales;
+namespace SalesPro;
 
 public class Program
 {

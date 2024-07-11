@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.InteropServices;
 using System.Text.Json.Serialization;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 
 [Table("deal")]
 [SupportsElastic]

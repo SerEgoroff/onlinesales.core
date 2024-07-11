@@ -9,12 +9,12 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Interfaces;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class DBQueryProvider<T> : IQueryProvider<T>
         where T : BaseEntityWithId

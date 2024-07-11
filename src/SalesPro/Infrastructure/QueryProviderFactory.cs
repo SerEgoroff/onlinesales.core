@@ -5,13 +5,13 @@
 using System.Web;
 using Microsoft.Extensions.Options;
 using Nest;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class QueryProviderFactory<T>
         where T : BaseEntityWithId, new()

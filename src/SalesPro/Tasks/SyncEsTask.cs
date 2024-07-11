@@ -7,13 +7,13 @@ using System.Text;
 using Elasticsearch.Net;
 using Microsoft.EntityFrameworkCore;
 using Nest;
-using OnlineSales.Data;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Services;
+using SalesPro.Data;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Services;
 
-namespace OnlineSales.Tasks
+namespace SalesPro.Tasks
 {
     public class SyncEsTask : ChangeLogTask
     {

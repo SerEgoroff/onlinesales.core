@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace OnlineSales.Plugin.EmailSync.Migrations
+namespace SalesPro.Plugin.EmailSync.Migrations
 {
     /// <inheritdoc />
     public partial class CreatedById : Migration

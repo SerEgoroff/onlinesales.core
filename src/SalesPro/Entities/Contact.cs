@@ -6,10 +6,10 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Geography;
+using SalesPro.DataAnnotations;
+using SalesPro.Geography;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 
 [Table("contact")]
 [SupportsElastic]

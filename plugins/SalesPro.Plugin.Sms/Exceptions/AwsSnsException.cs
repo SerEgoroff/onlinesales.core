@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineSales.Plugin.Sms.Exceptions
+namespace SalesPro.Plugin.Sms.Exceptions
 {
     [Serializable]
     public class AwsSnsException : Exception

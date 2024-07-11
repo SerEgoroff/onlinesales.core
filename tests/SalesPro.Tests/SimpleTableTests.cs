@@ -6,10 +6,10 @@ using System.Text.Json;
 using System.Web;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Helpers;
-using OnlineSales.Infrastructure;
+using SalesPro.Helpers;
+using SalesPro.Infrastructure;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public abstract class SimpleTableTests<T, TC, TU, TS> : BaseTestAutoLogin
     where T : BaseEntityWithId

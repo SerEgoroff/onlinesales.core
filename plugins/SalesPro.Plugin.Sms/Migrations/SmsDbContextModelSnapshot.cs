@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.Sms.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.Sms.Data;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.Sms.Migrations
+namespace SalesPro.Plugin.Sms.Migrations
 {
     [DbContext(typeof(SmsDbContext))]
     partial class SmsDbContextModelSnapshot : ModelSnapshot

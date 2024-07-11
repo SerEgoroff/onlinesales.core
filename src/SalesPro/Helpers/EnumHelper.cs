@@ -5,7 +5,7 @@
 using System.ComponentModel;
 using System.Reflection;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public static class EnumHelper
 {

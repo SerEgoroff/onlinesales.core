@@ -4,7 +4,7 @@
 
 using System.Text;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public static class UidHelper
 {

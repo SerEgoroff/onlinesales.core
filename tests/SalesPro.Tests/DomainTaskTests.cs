@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Helpers;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class DomainTaskTests : BaseTestAutoLogin
 {

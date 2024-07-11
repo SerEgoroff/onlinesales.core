@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace OnlineSales.Tests.TestEntities;
+namespace SalesPro.Tests.TestEntities;
 
 public class TestOrderItem : OrderItemCreateDto
 {

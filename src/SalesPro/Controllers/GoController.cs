@@ -5,11 +5,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.Entities;
+using SalesPro.Data;
+using SalesPro.Entities;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 public class GoController : ControllerBase
 {

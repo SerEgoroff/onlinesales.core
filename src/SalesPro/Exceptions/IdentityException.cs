@@ -5,7 +5,7 @@
 using System.Text;
 using Microsoft.AspNetCore.Identity;
 
-namespace OnlineSales.Exceptions;
+namespace SalesPro.Exceptions;
 public class IdentityException : Exception
 {
     public IdentityException(IEnumerable<IdentityError> errors)

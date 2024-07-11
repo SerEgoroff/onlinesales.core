@@ -4,7 +4,7 @@
 
 using Microsoft.Extensions.FileProviders;
 
-namespace OnlineSales.Plugin.Vsto;
+namespace SalesPro.Plugin.Vsto;
 
 public class VstoFileInfo : IFileInfo
 {

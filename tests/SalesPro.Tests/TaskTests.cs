@@ -5,10 +5,10 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Nest;
-using OnlineSales.Configuration;
-using OnlineSales.Helpers;
+using SalesPro.Configuration;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class TaskTests : BaseTestAutoLogin
 {

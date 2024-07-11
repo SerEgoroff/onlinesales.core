@@ -4,7 +4,7 @@
 using System.Runtime.Serialization;
 using Microsoft.AspNetCore.WebUtilities;
 
-namespace OnlineSales.Exceptions
+namespace SalesPro.Exceptions
 {
     [Serializable]
     public class QueryException : Exception

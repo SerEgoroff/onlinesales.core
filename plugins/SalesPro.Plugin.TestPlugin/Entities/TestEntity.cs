@@ -3,10 +3,10 @@
 // </copyright>
 
 using System.ComponentModel.DataAnnotations.Schema;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
 
-namespace OnlineSales.Plugin.TestPlugin.Entities;
+namespace SalesPro.Plugin.TestPlugin.Entities;
 
 [Table("test_entity")]
 [SupportsChangeLog]

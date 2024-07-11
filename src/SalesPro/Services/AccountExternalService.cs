@@ -6,12 +6,12 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Options;
-using OnlineSales.Configuration;
-using OnlineSales.DTOs;
-using OnlineSales.Helpers;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.DTOs;
+using SalesPro.Helpers;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services
+namespace SalesPro.Services
 {
     public class AccountExternalService : IAccountExternalService
     {

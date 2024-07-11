@@ -4,10 +4,10 @@
 
 using System.ComponentModel.DataAnnotations;
 using CsvHelper.Configuration.Attributes;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 
 public class OrderItemCreateDto
 {

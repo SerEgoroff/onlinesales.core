@@ -3,9 +3,9 @@
 // </copyright>
 
 using System.ComponentModel.DataAnnotations;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 
 public class FileCreateDto
 {

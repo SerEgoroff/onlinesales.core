@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace OnlineSales.Plugin.EmailSync.DTOs;
+namespace SalesPro.Plugin.EmailSync.DTOs;
 
 public class ImapAccountBaseDto
 {

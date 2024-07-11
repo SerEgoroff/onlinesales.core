@@ -5,11 +5,11 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Infrastructure;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Infrastructure;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [Authorize(Roles = "Admin")]
 [Route("api/[controller]")]

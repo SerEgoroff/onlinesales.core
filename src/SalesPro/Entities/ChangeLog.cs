@@ -5,7 +5,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace OnlineSales.Entities
+namespace SalesPro.Entities
 {
     [Table("change_log")]
     public class ChangeLog : BaseEntityWithId, IHasCreatedAt

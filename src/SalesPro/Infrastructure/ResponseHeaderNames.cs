@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-namespace OnlineSales.Infrastructure;
+namespace SalesPro.Infrastructure;
 
 /// <summary>
 /// Response Headers custom names.

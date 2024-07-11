@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OnlineSales.Plugin.Vsto.Entities;
+namespace SalesPro.Plugin.Vsto.Entities;
 
 [Table("vsto_user_version")]
 public class VstoUserVersion

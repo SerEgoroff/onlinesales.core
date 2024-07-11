@@ -4,9 +4,9 @@
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.Extensions.Options;
-using OnlineSales.Configuration;
+using SalesPro.Configuration;
 
-namespace OnlineSales.DataAnnotations
+namespace SalesPro.DataAnnotations
 {
     public class FileExtensionValidateAttribute : ValidationAttribute
     {

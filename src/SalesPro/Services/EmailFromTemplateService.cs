@@ -4,15 +4,15 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Infrastructure;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Infrastructure;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services
+namespace SalesPro.Services
 {
     public class EmailFromTemplateService : IEmailFromTemplateService
     {

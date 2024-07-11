@@ -4,10 +4,10 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Plugin.Sms.Entities;
+using SalesPro.Data;
+using SalesPro.Plugin.Sms.Entities;
 
-namespace OnlineSales.Plugin.Sms.Data;
+namespace SalesPro.Plugin.Sms.Data;
 
 public class SmsDbContext : PluginDbContextBase
 {

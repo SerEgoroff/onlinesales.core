@@ -9,9 +9,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Migrations;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Infrastructure;
+namespace SalesPro.Infrastructure;
 
 public class CustomSqlServerMigrationsSqlGenerator : NpgsqlMigrationsSqlGenerator
 {

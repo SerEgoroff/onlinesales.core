@@ -8,17 +8,17 @@ using MailKit.Search;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using MimeKit;
-using OnlineSales.Configuration;
-using OnlineSales.Entities;
-using OnlineSales.Exceptions;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.EmailSync.Data;
-using OnlineSales.Plugin.EmailSync.Entities;
-using OnlineSales.Services;
-using OnlineSales.Tasks;
+using SalesPro.Configuration;
+using SalesPro.Entities;
+using SalesPro.Exceptions;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.EmailSync.Data;
+using SalesPro.Plugin.EmailSync.Entities;
+using SalesPro.Services;
+using SalesPro.Tasks;
 using Serilog;
 
-namespace OnlineSales.EmailSync.Tasks
+namespace SalesPro.EmailSync.Tasks
 {
     public class EmailSyncTask : BaseTask
     {

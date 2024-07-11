@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Unidecode.NET;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public static class FileNameHelper
 {

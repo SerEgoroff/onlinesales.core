@@ -5,9 +5,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineSales.Configuration;
+using SalesPro.Configuration;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class IdentityLoginTests : BaseTestAutoLogin
 {

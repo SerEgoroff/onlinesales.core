@@ -3,9 +3,9 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.Helpers;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class ErrorsTests : BaseTestAutoLogin
 {

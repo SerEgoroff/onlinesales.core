@@ -5,7 +5,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 
 public enum TaskExecutionStatus
 {

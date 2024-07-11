@@ -4,9 +4,9 @@
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Interfaces;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Data;
+namespace SalesPro.Data;
 
 public abstract class PluginDbContextBase : PgDbContext
 {

@@ -6,10 +6,10 @@ using System.ComponentModel.DataAnnotations;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.DTOs;
-using OnlineSales.Interfaces;
+using SalesPro.DTOs;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Controllers
+namespace SalesPro.Controllers
 {
     [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]

@@ -2,11 +2,11 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class DiscountService : IDiscountService
 {

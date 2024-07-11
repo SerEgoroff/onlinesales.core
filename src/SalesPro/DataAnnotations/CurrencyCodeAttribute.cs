@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Text;
 
-namespace OnlineSales.DataAnnotations;
+namespace SalesPro.DataAnnotations;
 
 public class CurrencyCodeAttribute : ValidationAttribute
 {

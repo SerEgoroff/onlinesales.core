@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace OnlineSales.Plugin.Sms.DTOs;
+namespace SalesPro.Plugin.Sms.DTOs;
 
 public class SmsDetailsDto
 {

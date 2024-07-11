@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.EmailSync.Migrations
+namespace SalesPro.Plugin.EmailSync.Migrations
 {
     /// <inheritdoc />
     public partial class ImapAccount : Migration

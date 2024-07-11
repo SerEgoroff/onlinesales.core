@@ -5,10 +5,10 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
 
-namespace OnlineSales.Plugin.EmailSync.Entities;
+namespace SalesPro.Plugin.EmailSync.Entities;
 
 [Table("imap_account_folder")]
 [SupportsChangeLog]

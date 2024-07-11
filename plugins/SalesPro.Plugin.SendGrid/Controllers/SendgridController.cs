@@ -8,17 +8,17 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.SendGrid.Data;
-using OnlineSales.Plugin.SendGrid.DTOs;
-using OnlineSales.Plugin.SendGrid.Entities;
-using OnlineSales.Plugin.SendGrid.Exceptions;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.SendGrid.Data;
+using SalesPro.Plugin.SendGrid.DTOs;
+using SalesPro.Plugin.SendGrid.Entities;
+using SalesPro.Plugin.SendGrid.Exceptions;
 using SendGrid.Helpers.EventWebhook;
 using Serilog;
 
-namespace OnlineSales.Plugin.SendGrid.Controllers;
+namespace SalesPro.Plugin.SendGrid.Controllers;
 
 [Route("api/[controller]")]
 public class SendgridController : ControllerBase

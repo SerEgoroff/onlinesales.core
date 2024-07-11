@@ -9,9 +9,9 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Configuration;
+using SalesPro.Configuration;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class BaseTestAutoLogin : BaseTest
 {

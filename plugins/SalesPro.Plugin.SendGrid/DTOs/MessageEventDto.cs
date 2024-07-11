@@ -5,7 +5,7 @@
 using System.Text.Json.Serialization;
 using CsvHelper.Configuration.Attributes;
 
-namespace OnlineSales.Plugin.SendGrid.DTOs;
+namespace SalesPro.Plugin.SendGrid.DTOs;
 
 public class MessageEventDto : EmailDto
 {

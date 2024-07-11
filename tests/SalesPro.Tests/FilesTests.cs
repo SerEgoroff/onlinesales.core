@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class FilesTests : BaseTestAutoLogin
 {

@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
+using SalesPro.Data;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [Authorize]
 [Route("api/[controller]")]

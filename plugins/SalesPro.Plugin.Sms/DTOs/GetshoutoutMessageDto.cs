@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-namespace OnlineSales.Plugin.Sms.DTOs;
+namespace SalesPro.Plugin.Sms.DTOs;
 
 public class GetshoutoutMessageDto
 {

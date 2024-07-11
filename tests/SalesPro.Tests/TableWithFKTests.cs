@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public abstract class TableWithFKTests<T, TC, TU, TS> : SimpleTableTests<T, TC, TU, TS>
     where T : BaseEntity

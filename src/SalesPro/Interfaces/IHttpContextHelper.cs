@@ -3,9 +3,9 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Identity;
-using OnlineSales.Entities;
+using SalesPro.Entities;
 
-namespace OnlineSales.Interfaces
+namespace SalesPro.Interfaces
 {
     public interface IHttpContextHelper
     {

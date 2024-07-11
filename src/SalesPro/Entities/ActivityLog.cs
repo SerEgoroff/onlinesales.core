@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 using System.ComponentModel.DataAnnotations;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Entities
+namespace SalesPro.Entities
 {
     [SupportsElastic]
     public class ActivityLog : BaseEntityWithId, IHasCreatedAt

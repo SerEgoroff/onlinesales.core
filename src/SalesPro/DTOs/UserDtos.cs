@@ -3,7 +3,7 @@
 // </copyright>
 using System.ComponentModel.DataAnnotations;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 
 public class UserCreateDto
 {

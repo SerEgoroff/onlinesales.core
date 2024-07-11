@@ -3,10 +3,10 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.Geography;
-using OnlineSales.Helpers;
+using SalesPro.Geography;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [Route("api/[controller]")]
 public class ContinentsController : ControllerBase

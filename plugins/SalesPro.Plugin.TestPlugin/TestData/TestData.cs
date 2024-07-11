@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Plugin.TestPlugin.Entities;
+using SalesPro.Plugin.TestPlugin.Entities;
 
-namespace OnlineSales.Plugin.TestPlugin.TestData;
+namespace SalesPro.Plugin.TestPlugin.TestData;
 public class ChangeLogMigrationsTestData
 {
     public const int NumberOfDeletedEntities = 3;

@@ -4,14 +4,14 @@
 
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
-using OnlineSales.Services;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
+using SalesPro.Services;
 
-namespace OnlineSales.Tasks;
+namespace SalesPro.Tasks;
 
 public class ContactAccountTask : BaseTask
 {

@@ -5,12 +5,12 @@
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineSales.Helpers;
-using OnlineSales.Plugin.TestPlugin.Data;
-using OnlineSales.Plugin.TestPlugin.Entities;
-using OnlineSales.Plugin.TestPlugin.TestData;
+using SalesPro.Helpers;
+using SalesPro.Plugin.TestPlugin.Data;
+using SalesPro.Plugin.TestPlugin.Entities;
+using SalesPro.Plugin.TestPlugin.TestData;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 public class ChangeLogMigrationsTests : BaseTest
 {
     [Fact]

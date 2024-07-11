@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-namespace OnlineSales.Plugin.SendGrid.DTOs;
+namespace SalesPro.Plugin.SendGrid.DTOs;
 
 public class EmailDto
 {

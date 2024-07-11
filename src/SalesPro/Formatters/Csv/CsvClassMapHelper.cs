@@ -7,7 +7,7 @@ using System.Text.Json;
 using CsvHelper;
 using CsvHelper.Configuration;
 
-namespace OnlineSales.Formatters.Csv;
+namespace SalesPro.Formatters.Csv;
 
 public static class CsvClassMapHelper
 {

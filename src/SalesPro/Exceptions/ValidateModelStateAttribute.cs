@@ -4,7 +4,7 @@
 
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace OnlineSales.Exceptions
+namespace SalesPro.Exceptions
 {
     public class ValidateModelStateAttribute : ActionFilterAttribute
     {

@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using OnlineSales.Configuration;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
+using SalesPro.Configuration;
+using SalesPro.DTOs;
+using SalesPro.Entities;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [AllowAnonymous]
 [Route("api/[controller]")]

@@ -10,10 +10,10 @@ using AutoMapper;
 using CsvHelper;
 using CsvHelper.Configuration;
 using Microsoft.AspNetCore.Mvc.Testing;
-using OnlineSales.Controllers;
-using OnlineSales.Helpers;
+using SalesPro.Controllers;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class BaseTest : IDisposable
 {

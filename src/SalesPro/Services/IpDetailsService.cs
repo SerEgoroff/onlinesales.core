@@ -6,11 +6,11 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Options;
-using OnlineSales.Configuration;
-using OnlineSales.DTOs;
-using OnlineSales.Helpers;
+using SalesPro.Configuration;
+using SalesPro.DTOs;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class IpDetailsService
 {

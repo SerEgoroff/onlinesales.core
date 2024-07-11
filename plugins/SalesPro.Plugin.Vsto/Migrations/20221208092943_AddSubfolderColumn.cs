@@ -3,7 +3,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.Vsto.Migrations
+namespace SalesPro.Plugin.Vsto.Migrations
 {
     /// <inheritdoc />
     public partial class AddSubfolderColumn : Migration

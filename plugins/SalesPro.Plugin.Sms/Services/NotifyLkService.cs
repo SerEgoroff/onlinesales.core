@@ -4,11 +4,11 @@
 
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.WebUtilities;
-using OnlineSales.Plugin.Sms.Configuration;
-using OnlineSales.Plugin.Sms.Exceptions;
+using SalesPro.Plugin.Sms.Configuration;
+using SalesPro.Plugin.Sms.Exceptions;
 using Serilog;
 
-namespace OnlineSales.Plugin.Sms.Services
+namespace SalesPro.Plugin.Sms.Services
 {
     public class NotifyLkService : ISmsService
     {

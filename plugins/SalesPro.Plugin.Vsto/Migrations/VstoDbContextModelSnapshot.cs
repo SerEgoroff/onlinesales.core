@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.Vsto.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.Vsto.Data;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.Vsto.Migrations
+namespace SalesPro.Plugin.Vsto.Migrations
 {
     [DbContext(typeof(VstoDbContext))]
     partial class VstoDbContextModelSnapshot : ModelSnapshot

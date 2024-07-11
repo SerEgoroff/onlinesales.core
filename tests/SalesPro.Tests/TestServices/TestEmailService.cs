@@ -3,9 +3,9 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Http.HttpResults;
-using OnlineSales.Interfaces;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Tests.TestServices
+namespace SalesPro.Tests.TestServices
 {
     public class TestEmailService : IEmailService
     {

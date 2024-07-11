@@ -4,13 +4,13 @@
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineSales.Data;
-using OnlineSales.Plugin.Sms.Configuration;
-using OnlineSales.Plugin.Sms.Data;
-using OnlineSales.Plugin.Sms.Services;
-using OnlineSales.Plugin.Sms.Tasks;
+using SalesPro.Data;
+using SalesPro.Plugin.Sms.Configuration;
+using SalesPro.Plugin.Sms.Data;
+using SalesPro.Plugin.Sms.Services;
+using SalesPro.Plugin.Sms.Tasks;
 
-namespace OnlineSales.Plugin.Sms;
+namespace SalesPro.Plugin.Sms;
 
 public class SmsPlugin : IPlugin
 {

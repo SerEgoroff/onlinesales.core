@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace OnlineSales.Elastic;
+namespace SalesPro.Elastic;
 
 [Table("migration")]
 public class ElasticMigration

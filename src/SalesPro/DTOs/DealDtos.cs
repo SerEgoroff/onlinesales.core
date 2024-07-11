@@ -4,9 +4,9 @@
 
 using System.ComponentModel.DataAnnotations;
 using CsvHelper.Configuration.Attributes;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 
 public class DealBaseDto
 {

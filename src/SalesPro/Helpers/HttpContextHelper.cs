@@ -4,10 +4,10 @@
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Net.Http.Headers;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public class HttpContextHelper : IHttpContextHelper
 {

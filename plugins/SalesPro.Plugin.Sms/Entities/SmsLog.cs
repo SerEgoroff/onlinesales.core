@@ -4,10 +4,10 @@
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
 
-namespace OnlineSales.Plugin.Sms.Entities;
+namespace SalesPro.Plugin.Sms.Entities;
 
 [Table("sms_log")]
 [SupportsElastic]

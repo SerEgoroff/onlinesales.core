@@ -4,11 +4,11 @@
 
 using System.ComponentModel.DataAnnotations;
 using CsvHelper.Configuration.Attributes;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Geography;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Geography;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 
 public abstract class BaseContactDto
 {

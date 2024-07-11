@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Configuration;
+using SalesPro.Configuration;
 
-namespace OnlineSales.Plugin.SendGrid.Configuration;
+namespace SalesPro.Plugin.SendGrid.Configuration;
 
 public class PluginConfig
 {

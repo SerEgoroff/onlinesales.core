@@ -4,7 +4,7 @@
 
 using System.ComponentModel;
 
-namespace OnlineSales.Geography;
+namespace SalesPro.Geography;
 
 public enum Continent
 {

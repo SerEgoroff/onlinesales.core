@@ -6,13 +6,13 @@ using System.Linq.Expressions;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.DataAnnotations;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Infrastructure;
+using SalesPro.Data;
+using SalesPro.DataAnnotations;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Infrastructure;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 public class BaseControllerWithImport<T, TC, TU, TD, TI> : BaseController<T, TC, TU, TD>
     where T : BaseEntityWithId, new()

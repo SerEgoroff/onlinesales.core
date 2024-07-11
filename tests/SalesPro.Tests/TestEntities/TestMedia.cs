@@ -5,7 +5,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.StaticFiles;
 
-namespace OnlineSales.Tests.TestEntities
+namespace SalesPro.Tests.TestEntities
 {
     public class TestMedia : ImageCreateDto
     {

@@ -3,13 +3,13 @@
 // </copyright>
 
 using System.Reflection;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Services;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Services;
 
-namespace OnlineSales.Tasks;
+namespace SalesPro.Tasks;
 
 public abstract class ChangeLogTask : BaseTask
 {

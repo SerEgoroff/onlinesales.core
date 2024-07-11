@@ -5,7 +5,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.TestPlugin.Migrations
+namespace SalesPro.Plugin.TestPlugin.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

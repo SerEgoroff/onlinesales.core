@@ -5,9 +5,9 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 using Nest;
-using OnlineSales.Entities;
+using SalesPro.Entities;
 
-namespace OnlineSales.Plugin.SendGrid.Entities;
+namespace SalesPro.Plugin.SendGrid.Entities;
 
 [Table("sendgrid_event")]
 public class SendgridEvent : BaseEntityWithId

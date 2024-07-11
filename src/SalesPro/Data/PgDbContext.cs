@@ -8,14 +8,14 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Migrations;
-using OnlineSales.Configuration;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Infrastructure;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Infrastructure;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Data;
+namespace SalesPro.Data;
 
 public class PgDbContext : IdentityDbContext<User>
 {

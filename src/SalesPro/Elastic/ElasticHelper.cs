@@ -5,7 +5,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Nest;
 
-namespace OnlineSales.Elastic;
+namespace SalesPro.Elastic;
 
 public class ElasticHelper
 {

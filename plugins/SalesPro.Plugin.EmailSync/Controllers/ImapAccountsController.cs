@@ -7,13 +7,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Exceptions;
-using OnlineSales.Plugin.EmailSync.Data;
-using OnlineSales.Plugin.EmailSync.DTOs;
-using OnlineSales.Plugin.EmailSync.Entities;
+using SalesPro.Exceptions;
+using SalesPro.Plugin.EmailSync.Data;
+using SalesPro.Plugin.EmailSync.DTOs;
+using SalesPro.Plugin.EmailSync.Entities;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace OnlineSales.Plugin.EmailSync.Controllers;
+namespace SalesPro.Plugin.EmailSync.Controllers;
 
 [Authorize(Roles = "Admin")]
 [Route("api/users")]

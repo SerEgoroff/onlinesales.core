@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.SendGrid.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.SendGrid.Data;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.SendGrid.Migrations
+namespace SalesPro.Plugin.SendGrid.Migrations
 {
     [DbContext(typeof(SendgridDbContext))]
     partial class SendgridDbContextModelSnapshot : ModelSnapshot

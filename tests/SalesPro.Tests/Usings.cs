@@ -5,9 +5,9 @@
 global using System;
 global using System.Net;
 global using FluentAssertions;
-global using OnlineSales.DTOs;
-global using OnlineSales.Entities;
-global using OnlineSales.Interfaces;
-global using OnlineSales.Tests.Environment;
-global using OnlineSales.Tests.TestEntities;
+global using SalesPro.DTOs;
+global using SalesPro.Entities;
+global using SalesPro.Interfaces;
+global using SalesPro.Tests.Environment;
+global using SalesPro.Tests.TestEntities;
 global using Xunit;

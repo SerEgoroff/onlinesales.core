@@ -7,11 +7,11 @@ using System.Reflection;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Infrastructure;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Infrastructure;
 
-namespace OnlineSales.Controllers
+namespace SalesPro.Controllers
 {
     public class BaseController<T, TC, TU, TD> : ControllerBase
         where T : BaseEntityWithId, new()

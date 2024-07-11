@@ -5,7 +5,7 @@
 using System.ComponentModel.DataAnnotations;
 using CsvHelper.Configuration.Attributes;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 
 public class LinkCreateDto
 {

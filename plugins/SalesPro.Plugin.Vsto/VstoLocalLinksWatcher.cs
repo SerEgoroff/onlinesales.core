@@ -4,13 +4,13 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.Vsto.Data;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.Vsto.Data;
 using Quartz.Util;
 using Serilog;
 
-namespace OnlineSales.Plugin.Vsto;
+namespace SalesPro.Plugin.Vsto;
 
 public class VstoLocalLinksWatcher : IDisposable
 {

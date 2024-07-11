@@ -4,12 +4,12 @@
 
 using System.Web;
 using Microsoft.Extensions.Options;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class ESOnlyQueryProviderFactory<T> : QueryProviderFactory<T>
         where T : BaseEntityWithId, new()

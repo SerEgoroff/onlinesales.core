@@ -4,7 +4,7 @@
 
 using System.Reflection;
 using Microsoft.OpenApi.Models;
-using OnlineSales.Configuration;
+using SalesPro.Configuration;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace SwaggerFilters

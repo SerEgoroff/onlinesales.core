@@ -5,9 +5,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Geography;
+using SalesPro.Geography;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 
 [Table("ip_details")]
 [Index(nameof(Ip), IsUnique = true)]

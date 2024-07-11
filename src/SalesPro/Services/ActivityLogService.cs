@@ -3,10 +3,10 @@
 // </copyright>
 
 using Nest;
-using OnlineSales.Data;
-using OnlineSales.Entities;
+using SalesPro.Data;
+using SalesPro.Entities;
 
-namespace OnlineSales.Services
+namespace SalesPro.Services
 {
     public class ActivityLogService
     {

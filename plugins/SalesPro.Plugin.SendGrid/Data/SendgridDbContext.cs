@@ -4,11 +4,11 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.SendGrid.Entities;
+using SalesPro.Data;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.SendGrid.Entities;
 
-namespace OnlineSales.Plugin.SendGrid.Data;
+namespace SalesPro.Plugin.SendGrid.Data;
 
 public class SendgridDbContext : PluginDbContextBase
 {

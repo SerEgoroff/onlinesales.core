@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class DealPipelineStagesTests : TableWithFKTests<DealPipelineStage, TestPipelineStage, DealPipelineStageUpdateDto, IEntityService<DealPipelineStage>>
 {

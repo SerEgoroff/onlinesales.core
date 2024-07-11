@@ -3,10 +3,10 @@
 // </copyright>
 
 using AutoMapper;
-using OnlineSales.Plugin.EmailSync.DTOs;
-using OnlineSales.Plugin.EmailSync.Entities;
+using SalesPro.Plugin.EmailSync.DTOs;
+using SalesPro.Plugin.EmailSync.Entities;
 
-namespace OnlineSales.Plugin.EmailSync.Configuration;
+namespace SalesPro.Plugin.EmailSync.Configuration;
 
 public class AutoMapperProfiles : Profile
 {

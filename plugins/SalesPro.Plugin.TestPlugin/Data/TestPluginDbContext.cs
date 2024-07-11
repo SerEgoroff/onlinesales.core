@@ -6,12 +6,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.TestPlugin.Entities;
-using OnlineSales.Plugin.TestPlugin.Exceptions;
+using SalesPro.Data;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.TestPlugin.Entities;
+using SalesPro.Plugin.TestPlugin.Exceptions;
 
-namespace OnlineSales.Plugin.TestPlugin.Data;
+namespace SalesPro.Plugin.TestPlugin.Data;
 
 public class TestPluginDbContext : PluginDbContextBase
 {

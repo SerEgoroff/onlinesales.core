@@ -3,10 +3,10 @@
 // </copyright>
 
 using Medallion.Threading.Postgres;
-using OnlineSales.Configuration;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class LockService : ILockService
 {

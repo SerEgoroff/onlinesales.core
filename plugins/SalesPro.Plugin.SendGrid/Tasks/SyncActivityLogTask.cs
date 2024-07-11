@@ -3,21 +3,21 @@
 // </copyright>
 
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.DataAnnotations;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Exceptions;
-using OnlineSales.Helpers;
-using OnlineSales.Plugin.SendGrid.Data;
-using OnlineSales.Plugin.SendGrid.Entities;
-using OnlineSales.Plugin.SendGrid.Exceptions;
-using OnlineSales.Services;
-using OnlineSales.Tasks;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.DataAnnotations;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Exceptions;
+using SalesPro.Helpers;
+using SalesPro.Plugin.SendGrid.Data;
+using SalesPro.Plugin.SendGrid.Entities;
+using SalesPro.Plugin.SendGrid.Exceptions;
+using SalesPro.Services;
+using SalesPro.Tasks;
 using Serilog;
 
-namespace OnlineSales.SendGrid.Tasks
+namespace SalesPro.SendGrid.Tasks
 {
     public class SyncActivityLogTask : BaseTask
     {

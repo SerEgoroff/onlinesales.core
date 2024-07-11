@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [AllowAnonymous]
 [ApiExplorerSettings(IgnoreApi = true)]

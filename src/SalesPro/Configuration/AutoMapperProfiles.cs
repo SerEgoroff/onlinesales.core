@@ -3,10 +3,10 @@
 // </copyright>
 
 using AutoMapper;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
+using SalesPro.DTOs;
+using SalesPro.Entities;
 
-namespace OnlineSales.Configuration;
+namespace SalesPro.Configuration;
 
 public class AutoMapperProfiles : Profile
 {

@@ -4,7 +4,7 @@
 
 using Microsoft.Extensions.Primitives;
 
-namespace OnlineSales.DTOs;
+namespace SalesPro.DTOs;
 public class VersionDto
 {
     public string? Version { get; set; } = string.Empty;

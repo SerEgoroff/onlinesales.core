@@ -6,10 +6,10 @@ using System.Diagnostics;
 using System.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.DTOs;
-using OnlineSales.Interfaces;
+using SalesPro.DTOs;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [Route("api/[controller]")]
 public class VersionController : ControllerBase

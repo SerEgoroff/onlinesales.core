@@ -4,10 +4,10 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Plugin.Vsto.Entities;
+using SalesPro.Data;
+using SalesPro.Plugin.Vsto.Entities;
 
-namespace OnlineSales.Plugin.Vsto.Data;
+namespace SalesPro.Plugin.Vsto.Data;
 
 public class VstoDbContext : PluginDbContextBase
 {

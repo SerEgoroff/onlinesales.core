@@ -3,13 +3,13 @@
 // </copyright>
 
 using System.Net.Http.Headers;
-using OnlineSales.Helpers;
-using OnlineSales.Plugin.Sms.Configuration;
-using OnlineSales.Plugin.Sms.DTOs;
-using OnlineSales.Plugin.Sms.Exceptions;
+using SalesPro.Helpers;
+using SalesPro.Plugin.Sms.Configuration;
+using SalesPro.Plugin.Sms.DTOs;
+using SalesPro.Plugin.Sms.Exceptions;
 using Serilog;
 
-namespace OnlineSales.Plugin.Sms.Services;
+namespace SalesPro.Plugin.Sms.Services;
 
 public class GetshoutoutService : ISmsService
 {

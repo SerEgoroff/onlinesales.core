@@ -5,7 +5,7 @@
 using System.Reflection;
 using System.Runtime.Loader;
 
-namespace OnlineSales.Infrastructure;
+namespace SalesPro.Infrastructure;
 
 internal sealed class PluginLoadContext : AssemblyLoadContext
 {

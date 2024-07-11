@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Geography;
+using SalesPro.Geography;
 
-namespace OnlineSales.Tests.TestEntities;
+namespace SalesPro.Tests.TestEntities;
 
 public class TestAccount : AccountCreateDto
 {

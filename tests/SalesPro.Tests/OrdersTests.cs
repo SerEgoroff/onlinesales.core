@@ -5,11 +5,11 @@
 using System;
 using System.Security.Policy;
 using Microsoft.AspNetCore.Http;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Infrastructure;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Infrastructure;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class OrdersTests : TableWithFKTests<Order, TestOrder, OrderUpdateDto, IEntityService<Order>>
 {

@@ -3,7 +3,7 @@
 // </copyright>
 using System.Runtime.Serialization;
 
-namespace OnlineSales.Exceptions;
+namespace SalesPro.Exceptions;
 
 [Serializable]
 public class PluginDbContextException : Exception

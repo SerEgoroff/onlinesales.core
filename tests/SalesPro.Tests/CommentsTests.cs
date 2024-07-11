@@ -4,7 +4,7 @@
 
 using System.Text.Json;
 
-namespace OnlineSales.Tests;
+namespace SalesPro.Tests;
 
 public class CommentsTests : TableWithFKTests<Comment, TestComment, CommentUpdateDto, ICommentService>
 {

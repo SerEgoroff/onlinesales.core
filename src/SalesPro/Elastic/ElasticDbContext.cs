@@ -5,7 +5,7 @@
 using System.Reflection;
 using Nest;
 
-namespace OnlineSales.Elastic;
+namespace SalesPro.Elastic;
 
 public abstract class ElasticDbContext
 {

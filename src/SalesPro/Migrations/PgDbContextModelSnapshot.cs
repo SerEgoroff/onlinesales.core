@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Data;
-using OnlineSales.Entities;
+using SalesPro.Data;
+using SalesPro.Entities;
 
 #nullable disable
 
-namespace OnlineSales.Migrations
+namespace SalesPro.Migrations
 {
     [DbContext(typeof(PgDbContext))]
     partial class PgDbContextModelSnapshot : ModelSnapshot

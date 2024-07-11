@@ -3,10 +3,10 @@
 // </copyright>
 
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Plugin.Sms.Configuration;
-using OnlineSales.Plugin.Sms.Exceptions;
+using SalesPro.Plugin.Sms.Configuration;
+using SalesPro.Plugin.Sms.Exceptions;
 
-namespace OnlineSales.Plugin.Sms.Services;
+namespace SalesPro.Plugin.Sms.Services;
 
 public class SmsService : ISmsService
 {

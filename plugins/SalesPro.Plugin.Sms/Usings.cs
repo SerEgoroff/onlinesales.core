@@ -3,4 +3,4 @@
 // </copyright>
 
 global using System;
-global using OnlineSales.Interfaces;
+global using SalesPro.Interfaces;

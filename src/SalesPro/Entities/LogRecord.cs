@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Runtime.Serialization;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 
 [Table("log_record")]
 public class LogRecord

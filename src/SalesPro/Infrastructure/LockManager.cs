@@ -4,7 +4,7 @@
 
 using Medallion.Threading.Postgres;
 
-namespace OnlineSales.Infrastructure;
+namespace SalesPro.Infrastructure;
 
 public class LockManager
 {

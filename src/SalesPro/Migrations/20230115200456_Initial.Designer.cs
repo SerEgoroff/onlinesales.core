@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Data;
+using SalesPro.Data;
 
 #nullable disable
 
-namespace OnlineSales.Migrations
+namespace SalesPro.Migrations
 {
     [DbContext(typeof(PgDbContext))]
     [Migration("20230115200456_Initial")]

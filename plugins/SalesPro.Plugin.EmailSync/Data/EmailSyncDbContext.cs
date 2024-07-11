@@ -7,11 +7,11 @@ using EntityFrameworkCore.EncryptColumn.Interfaces;
 using EntityFrameworkCore.EncryptColumn.Util;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.EmailSync.Entities;
+using SalesPro.Data;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.EmailSync.Entities;
 
-namespace OnlineSales.Plugin.EmailSync.Data;
+namespace SalesPro.Plugin.EmailSync.Data;
 
 public class EmailSyncDbContext : PluginDbContextBase
 {

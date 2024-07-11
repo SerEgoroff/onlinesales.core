@@ -2,12 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using OnlineSales.Data;
-using OnlineSales.Entities;
+using SalesPro.Data;
+using SalesPro.Entities;
 
 #nullable disable
 
-namespace OnlineSales.Migrations
+namespace SalesPro.Migrations
 {
     [DbContext(typeof(PgDbContext))]
     [Migration("20230126073650_AccountEntity")]

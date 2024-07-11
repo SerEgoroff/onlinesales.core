@@ -4,7 +4,7 @@
 
 using System.Text.Json;
 
-namespace OnlineSales.Configuration
+namespace SalesPro.Configuration
 {
     public class SnakeCaseNamingPolicy : JsonNamingPolicy
     {

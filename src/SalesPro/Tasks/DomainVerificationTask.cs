@@ -2,13 +2,13 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
-using OnlineSales.Services;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
+using SalesPro.Services;
 
-namespace OnlineSales.Tasks;
+namespace SalesPro.Tasks;
 
 public class DomainVerificationTask : BaseTask
 {

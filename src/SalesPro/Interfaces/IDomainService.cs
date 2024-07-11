@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Entities;
+using SalesPro.Entities;
 
-namespace OnlineSales.Interfaces
+namespace SalesPro.Interfaces
 {
     public interface IDomainService : IEntityService<Domain>
     {

@@ -5,10 +5,10 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Identity;
+namespace SalesPro.Identity;
 
 public class AzureAdJwtBearerEventsHandler : JwtBearerEvents
 {

@@ -5,7 +5,7 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace OnlineSales.Interfaces;
+namespace SalesPro.Interfaces;
 
 public interface ISwaggerConfigurator
 {

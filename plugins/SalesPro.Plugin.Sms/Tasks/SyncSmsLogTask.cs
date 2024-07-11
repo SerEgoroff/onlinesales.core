@@ -3,19 +3,19 @@
 // </copyright>
 
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Configuration;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Exceptions;
-using OnlineSales.Helpers;
-using OnlineSales.Plugin.Sms.Data;
-using OnlineSales.Plugin.Sms.Entities;
-using OnlineSales.Plugin.Sms.Exceptions;
-using OnlineSales.Services;
-using OnlineSales.Tasks;
+using SalesPro.Configuration;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Exceptions;
+using SalesPro.Helpers;
+using SalesPro.Plugin.Sms.Data;
+using SalesPro.Plugin.Sms.Entities;
+using SalesPro.Plugin.Sms.Exceptions;
+using SalesPro.Services;
+using SalesPro.Tasks;
 using Serilog;
 
-namespace OnlineSales.Plugin.Sms.Tasks
+namespace SalesPro.Plugin.Sms.Tasks
 {
     public class SyncSmsLogTask : BaseTask
     {

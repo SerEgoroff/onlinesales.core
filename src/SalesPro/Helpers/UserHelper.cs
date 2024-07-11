@@ -4,9 +4,9 @@
 
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
-using OnlineSales.Entities;
+using SalesPro.Entities;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public static class UserHelper
 {

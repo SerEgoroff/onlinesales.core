@@ -4,14 +4,14 @@
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineSales.Data;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.SendGrid.Configuration;
-using OnlineSales.Plugin.SendGrid.Data;
-using OnlineSales.Plugin.SendGrid.Tasks;
-using OnlineSales.SendGrid.Tasks;
+using SalesPro.Data;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.SendGrid.Configuration;
+using SalesPro.Plugin.SendGrid.Data;
+using SalesPro.Plugin.SendGrid.Tasks;
+using SalesPro.SendGrid.Tasks;
 
-namespace OnlineSales.Plugin.SendGrid;
+namespace SalesPro.Plugin.SendGrid;
 
 public class SendGridPlugin : IPlugin
 {

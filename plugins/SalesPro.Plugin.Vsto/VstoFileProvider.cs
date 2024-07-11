@@ -5,10 +5,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Primitives;
-using OnlineSales.Data;
-using OnlineSales.Plugin.Vsto.Data;
+using SalesPro.Data;
+using SalesPro.Plugin.Vsto.Data;
 
-namespace OnlineSales.Plugin.Vsto;
+namespace SalesPro.Plugin.Vsto;
 
 public sealed class VstoFileProvider : IFileProvider
 {

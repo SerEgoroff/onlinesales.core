@@ -3,12 +3,12 @@
 // </copyright>
 
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Data;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services
+namespace SalesPro.Services
 {
     public class EmailWithLogService : IEmailWithLogService
     {

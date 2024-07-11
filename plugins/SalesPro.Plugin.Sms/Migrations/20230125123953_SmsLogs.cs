@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.Sms.Migrations
+namespace SalesPro.Plugin.Sms.Migrations
 {
     /// <inheritdoc />
     public partial class SmsLogs : Migration

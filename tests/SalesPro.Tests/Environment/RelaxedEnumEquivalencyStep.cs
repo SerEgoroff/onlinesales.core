@@ -6,7 +6,7 @@ using System.Globalization;
 using FluentAssertions.Equivalency;
 using FluentAssertions.Execution;
 
-namespace OnlineSales.Tests.Environment;
+namespace SalesPro.Tests.Environment;
 
 internal class RelaxedEnumEquivalencyStep : IEquivalencyStep
 {

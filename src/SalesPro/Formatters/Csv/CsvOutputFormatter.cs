@@ -11,7 +11,7 @@ using CsvHelper.TypeConversion;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Net.Http.Headers;
 
-namespace OnlineSales.Formatters.Csv;
+namespace SalesPro.Formatters.Csv;
 
 public class CsvOutputFormatter : OutputFormatter
 {

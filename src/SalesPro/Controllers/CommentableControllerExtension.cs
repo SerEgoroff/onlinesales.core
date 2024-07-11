@@ -5,12 +5,12 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.DTOs;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
+using SalesPro.Data;
+using SalesPro.DTOs;
+using SalesPro.Entities;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Interfaces;
+namespace SalesPro.Interfaces;
 
 public class CommentableControllerExtension
 {

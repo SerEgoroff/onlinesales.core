@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-namespace OnlineSales.Plugin.Sms.Exceptions
+namespace SalesPro.Plugin.Sms.Exceptions
 {
     [Serializable]
     public class UnknownCountryCodeException : Exception

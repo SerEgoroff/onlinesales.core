@@ -7,14 +7,14 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
-using OnlineSales.Plugin.Sms.Configuration;
+using SalesPro.Plugin.Sms.Configuration;
 using Serilog;
 using Twilio;
 using Twilio.Exceptions;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Types;
 
-namespace OnlineSales.Plugin.Sms.Services
+namespace SalesPro.Plugin.Sms.Services
 {
     public class TwilioService : ISmsService
     {

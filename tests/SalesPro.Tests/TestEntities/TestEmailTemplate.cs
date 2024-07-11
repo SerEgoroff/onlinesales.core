@@ -2,7 +2,7 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-namespace OnlineSales.Tests.TestEntities;
+namespace SalesPro.Tests.TestEntities;
 
 public class TestEmailTemplate : EmailTemplateCreateDto
 {

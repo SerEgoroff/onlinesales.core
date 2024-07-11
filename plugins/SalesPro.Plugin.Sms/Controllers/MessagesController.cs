@@ -5,14 +5,14 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.Exceptions;
-using OnlineSales.Plugin.Sms.Data;
-using OnlineSales.Plugin.Sms.DTOs;
-using OnlineSales.Plugin.Sms.Entities;
 using PhoneNumbers;
+using SalesPro.Exceptions;
+using SalesPro.Plugin.Sms.Data;
+using SalesPro.Plugin.Sms.DTOs;
+using SalesPro.Plugin.Sms.Entities;
 using Serilog;
 
-namespace OnlineSales.Plugin.Sms.Controllers;
+namespace SalesPro.Plugin.Sms.Controllers;
 
 [Route("api/messages")]
 public class MessagesController : Controller

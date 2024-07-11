@@ -3,9 +3,9 @@
 // </copyright>
 
 using System.Security.Claims;
-using OnlineSales.Entities;
+using SalesPro.Entities;
 
-namespace OnlineSales.Interfaces;
+namespace SalesPro.Interfaces;
 
 public interface IIdentityService
 {

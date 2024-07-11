@@ -10,10 +10,10 @@ using System.Text.RegularExpressions;
 using AutoMapper.Internal;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class CustomSwaggerScheme : ISchemaFilter
     {

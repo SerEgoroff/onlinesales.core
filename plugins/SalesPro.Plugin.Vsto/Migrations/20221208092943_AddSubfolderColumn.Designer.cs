@@ -2,12 +2,12 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.Vsto.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.Vsto.Data;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.Vsto.Migrations
+namespace SalesPro.Plugin.Vsto.Migrations
 {
     [DbContext(typeof(VstoDbContext))]
     [Migration("20221208092943_AddSubfolderColumn")]

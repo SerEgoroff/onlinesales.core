@@ -7,11 +7,11 @@ using System.Reflection;
 using DnsClient;
 using DnsClient.Protocol;
 using HtmlAgilityPack;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class DomainService : IDomainService
 {

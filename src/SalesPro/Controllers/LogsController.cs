@@ -4,10 +4,10 @@
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineSales.Data;
-using OnlineSales.Entities;
+using SalesPro.Data;
+using SalesPro.Entities;
 
-namespace OnlineSales.Controllers;
+namespace SalesPro.Controllers;
 
 [Authorize(Roles = "Admin")]
 [Route("api/[controller]")]

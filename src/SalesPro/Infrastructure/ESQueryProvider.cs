@@ -5,11 +5,11 @@
 using System.Reflection;
 using System.Text;
 using Nest;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.DataAnnotations;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class ESQueryProvider<T> : IQueryProvider<T>
         where T : BaseEntityWithId

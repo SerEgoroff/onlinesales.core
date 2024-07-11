@@ -4,12 +4,12 @@
 
 using Medallion.Threading.Postgres;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 using Quartz;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class TaskRunner : IJob
     {

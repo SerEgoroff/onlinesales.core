@@ -4,11 +4,11 @@
 
 using System.Net.Sockets;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class MxVerifyService : IMxVerifyService
 {

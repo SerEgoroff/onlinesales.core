@@ -3,9 +3,9 @@
 // </copyright>
 
 using System.Runtime.Serialization;
-using OnlineSales.Interfaces;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Exceptions;
+namespace SalesPro.Exceptions;
 
 [Serializable]
 public class TaskNotCompletedException : Exception

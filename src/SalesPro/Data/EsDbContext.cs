@@ -6,12 +6,12 @@ using System;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Nest;
-using OnlineSales.Configuration;
-using OnlineSales.DataAnnotations;
-using OnlineSales.Elastic;
-using OnlineSales.Entities;
+using SalesPro.Configuration;
+using SalesPro.DataAnnotations;
+using SalesPro.Elastic;
+using SalesPro.Entities;
 
-namespace OnlineSales.Data;
+namespace SalesPro.Data;
 
 public class EsDbContext : ElasticDbContext
 {

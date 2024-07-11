@@ -4,7 +4,7 @@
 
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace OnlineSales.Exceptions;
+namespace SalesPro.Exceptions;
 
 public class InvalidModelStateException : Exception
 {

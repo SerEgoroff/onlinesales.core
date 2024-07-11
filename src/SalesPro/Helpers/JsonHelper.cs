@@ -4,9 +4,9 @@
 
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using OnlineSales.Configuration;
+using SalesPro.Configuration;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public enum JsonNamingConvention
 {

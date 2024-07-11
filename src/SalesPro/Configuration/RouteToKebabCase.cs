@@ -4,7 +4,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace OnlineSales.Configuration
+namespace SalesPro.Configuration
 {
     public class RouteToKebabCase : IOutboundParameterTransformer
     {

@@ -2,10 +2,10 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Infrastructure;
-using OnlineSales.Interfaces;
+using SalesPro.Infrastructure;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class VariablesService : IVariablesService
 {

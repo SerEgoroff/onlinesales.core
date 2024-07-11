@@ -3,13 +3,13 @@
 // </copyright>
 
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Geography;
-using OnlineSales.Helpers;
-using OnlineSales.Services;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Geography;
+using SalesPro.Helpers;
+using SalesPro.Services;
 
-namespace OnlineSales.Tasks;
+namespace SalesPro.Tasks;
 
 public class SyncIpDetailsTask : ChangeLogTask
 {

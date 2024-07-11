@@ -4,12 +4,12 @@
 
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
-using OnlineSales.Services;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
+using SalesPro.Services;
 
-namespace OnlineSales.Tasks;
+namespace SalesPro.Tasks;
 
 public class ContactScheduledEmailTask : BaseTask
 {

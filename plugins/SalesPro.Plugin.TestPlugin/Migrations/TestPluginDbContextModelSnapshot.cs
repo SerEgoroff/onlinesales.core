@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.TestPlugin.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.TestPlugin.Data;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.TestPlugin.Migrations
+namespace SalesPro.Plugin.TestPlugin.Migrations
 {
     [DbContext(typeof(TestPluginDbContext))]
     partial class TestPluginDbContextModelSnapshot : ModelSnapshot

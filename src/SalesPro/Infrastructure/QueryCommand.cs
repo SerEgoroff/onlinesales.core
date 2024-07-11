@@ -5,7 +5,7 @@
 using System.Globalization;
 using System.Reflection;
 
-namespace OnlineSales.Entities
+namespace SalesPro.Entities
 {
     public enum FilterType
     {

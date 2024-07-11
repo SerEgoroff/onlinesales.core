@@ -6,12 +6,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using OnlineSales.Entities;
-using OnlineSales.Plugin.EmailSync.Data;
+using SalesPro.Entities;
+using SalesPro.Plugin.EmailSync.Data;
 
 #nullable disable
 
-namespace OnlineSales.Plugin.EmailSync.Migrations
+namespace SalesPro.Plugin.EmailSync.Migrations
 {
     [DbContext(typeof(EmailSyncDbContext))]
     [Migration("20230524094335_ImapFolders")]

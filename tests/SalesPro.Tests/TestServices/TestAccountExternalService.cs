@@ -2,10 +2,10 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Geography;
-using OnlineSales.Interfaces;
+using SalesPro.Geography;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Tests.TestServices;
+namespace SalesPro.Tests.TestServices;
 
 public class TestAccountExternalService : IAccountExternalService
 {

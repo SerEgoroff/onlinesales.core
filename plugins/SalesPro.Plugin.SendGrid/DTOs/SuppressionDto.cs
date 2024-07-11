@@ -2,9 +2,9 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Helpers;
+using SalesPro.Helpers;
 
-namespace OnlineSales.Plugin.SendGrid.DTOs;
+namespace SalesPro.Plugin.SendGrid.DTOs;
 
 public class SuppressionDto
 {

@@ -5,10 +5,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using OnlineSales.Exceptions;
-using OnlineSales.Interfaces;
+using SalesPro.Exceptions;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Plugin.ReverseProxy;
+namespace SalesPro.Plugin.ReverseProxy;
 
 public class ReverseProxyPlugin : IPlugin, IPluginApplication
 {

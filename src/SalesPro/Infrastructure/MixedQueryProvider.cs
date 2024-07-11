@@ -4,10 +4,10 @@
 
 using System.Reflection;
 using Nest;
-using OnlineSales.Entities;
-using OnlineSales.Interfaces;
+using SalesPro.Entities;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class MixedQueryProvider<T> : IQueryProvider<T>
         where T : BaseEntityWithId

@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Identity.Web;
 using Microsoft.IdentityModel.Tokens;
-using OnlineSales.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Identity;
+using SalesPro.Configuration;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Identity;
 
-namespace OnlineSales.Infrastructure;
+namespace SalesPro.Infrastructure;
 
 public static class IdentityHelper
 {

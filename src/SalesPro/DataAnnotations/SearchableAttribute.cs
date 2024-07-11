@@ -4,7 +4,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace OnlineSales.DataAnnotations;
+namespace SalesPro.DataAnnotations;
 
 [AttributeUsage(AttributeTargets.Property)]
 public class SearchableAttribute : Attribute

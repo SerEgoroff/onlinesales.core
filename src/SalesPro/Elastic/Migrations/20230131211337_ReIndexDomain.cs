@@ -2,10 +2,10 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 
-using OnlineSales.Elastic;
-using OnlineSales.Entities;
+using SalesPro.Elastic;
+using SalesPro.Entities;
 
-namespace OnlineSales.Elastic.Migrations;
+namespace SalesPro.Elastic.Migrations;
 
 [ElasticMigration("20230131211337_ReIndexDomain")]
 public class ReIndexDomain : ElasticMigration

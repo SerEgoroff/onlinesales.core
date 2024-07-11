@@ -7,11 +7,11 @@ using MailKit;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
-using OnlineSales.Configuration;
-using OnlineSales.DTOs;
-using OnlineSales.Interfaces;
+using SalesPro.Configuration;
+using SalesPro.DTOs;
+using SalesPro.Interfaces;
 
-namespace OnlineSales.Services;
+namespace SalesPro.Services;
 
 public class EmailService : IEmailService
 {

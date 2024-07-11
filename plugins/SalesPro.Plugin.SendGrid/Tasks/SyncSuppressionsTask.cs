@@ -2,17 +2,17 @@
 // Licensed under the MIT license. See LICENSE file in the samples root for full license information.
 // </copyright>
 using Microsoft.Extensions.Configuration;
-using OnlineSales.Data;
-using OnlineSales.Entities;
-using OnlineSales.Helpers;
-using OnlineSales.Interfaces;
-using OnlineSales.Plugin.SendGrid.DTOs;
-using OnlineSales.Plugin.SendGrid.Exceptions;
-using OnlineSales.Services;
-using OnlineSales.Tasks;
+using SalesPro.Data;
+using SalesPro.Entities;
+using SalesPro.Helpers;
+using SalesPro.Interfaces;
+using SalesPro.Plugin.SendGrid.DTOs;
+using SalesPro.Plugin.SendGrid.Exceptions;
+using SalesPro.Services;
+using SalesPro.Tasks;
 using SendGrid;
 
-namespace OnlineSales.Plugin.SendGrid.Tasks;
+namespace SalesPro.Plugin.SendGrid.Tasks;
 
 public class SyncSuppressionsTask : BaseTask
 {

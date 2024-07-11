@@ -5,10 +5,10 @@
 using System.Globalization;
 using System.Reflection;
 using System.Text;
-using OnlineSales.Data;
-using OnlineSales.Entities;
+using SalesPro.Data;
+using SalesPro.Entities;
 
-namespace OnlineSales.Infrastructure
+namespace SalesPro.Infrastructure
 {
     public class QueryModelBuilder<T>
         where T : BaseEntityWithId

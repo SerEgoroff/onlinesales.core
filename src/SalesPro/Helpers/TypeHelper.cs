@@ -5,7 +5,7 @@
 using System.Reflection;
 using System.Reflection.Emit;
 
-namespace OnlineSales.Helpers;
+namespace SalesPro.Helpers;
 
 public static class TypeHelper
 {

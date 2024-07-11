@@ -5,7 +5,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace OnlineSales.Infrastructure;
+namespace SalesPro.Infrastructure;
 
 public static class DbContextExtentions
 {

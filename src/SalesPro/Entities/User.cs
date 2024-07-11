@@ -3,9 +3,9 @@
 // </copyright>
 
 using Microsoft.AspNetCore.Identity;
-using OnlineSales.DataAnnotations;
+using SalesPro.DataAnnotations;
 
-namespace OnlineSales.Entities;
+namespace SalesPro.Entities;
 public class User : IdentityUser
 {
     public string AvatarUrl { get; set; } = string.Empty;
