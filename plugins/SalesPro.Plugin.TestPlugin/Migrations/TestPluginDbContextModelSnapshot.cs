@@ -225,7 +225,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Account", b =>
+            modelBuilder.Entity("SalesPro.Entities.Account", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -332,7 +332,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ChangeLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.ChangeLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -376,7 +376,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ChangeLogTaskLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.ChangeLogTaskLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -427,7 +427,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Comment", b =>
+            modelBuilder.Entity("SalesPro.Entities.Comment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -533,7 +533,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Contact", b =>
+            modelBuilder.Entity("SalesPro.Entities.Contact", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -693,7 +693,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ContactEmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.ContactEmailSchedule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -765,7 +765,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Content", b =>
+            modelBuilder.Entity("SalesPro.Entities.Content", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -886,7 +886,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Deal", b =>
+            modelBuilder.Entity("SalesPro.Entities.Deal", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -985,7 +985,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.DealPipeline", b =>
+            modelBuilder.Entity("SalesPro.Entities.DealPipeline", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1044,7 +1044,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.DealPipelineStage", b =>
+            modelBuilder.Entity("SalesPro.Entities.DealPipelineStage", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1114,7 +1114,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Discount", b =>
+            modelBuilder.Entity("SalesPro.Entities.Discount", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1194,7 +1194,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Domain", b =>
+            modelBuilder.Entity("SalesPro.Entities.Domain", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1288,7 +1288,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailGroup", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailGroup", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1352,7 +1352,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1447,7 +1447,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailSchedule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1513,7 +1513,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailTemplate", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailTemplate", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1612,7 +1612,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.File", b =>
+            modelBuilder.Entity("SalesPro.Entities.File", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1695,7 +1695,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.IpDetails", b =>
+            modelBuilder.Entity("SalesPro.Entities.IpDetails", b =>
                 {
                     b.Property<string>("Ip")
                         .HasColumnType("text")
@@ -1735,7 +1735,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Link", b =>
+            modelBuilder.Entity("SalesPro.Entities.Link", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1808,7 +1808,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.LinkLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.LinkLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1862,7 +1862,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Media", b =>
+            modelBuilder.Entity("SalesPro.Entities.Media", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1945,7 +1945,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Order", b =>
+            modelBuilder.Entity("SalesPro.Entities.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -2064,7 +2064,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.OrderItem", b =>
+            modelBuilder.Entity("SalesPro.Entities.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -2151,7 +2151,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Promotion", b =>
+            modelBuilder.Entity("SalesPro.Entities.Promotion", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -2227,7 +2227,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.TaskExecutionLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.TaskExecutionLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -2273,7 +2273,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Unsubscribe", b =>
+            modelBuilder.Entity("SalesPro.Entities.Unsubscribe", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -2323,7 +2323,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.User", b =>
+            modelBuilder.Entity("SalesPro.Entities.User", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("text")
@@ -2428,7 +2428,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         });
                 });
 
-            modelBuilder.Entity("OnlineSales.Plugin.TestPlugin.Entities.TestEntity", b =>
+            modelBuilder.Entity("SalesPro.Plugin.TestPlugin.Entities.TestEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -2486,14 +2486,14 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
 
             modelBuilder.Entity("ContactDeal", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", null)
+                    b.HasOne("SalesPro.Entities.Contact", null)
                         .WithMany()
                         .HasForeignKey("ContactsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_contact_deal_contact_contacts_id");
 
-                    b.HasOne("OnlineSales.Entities.Deal", null)
+                    b.HasOne("SalesPro.Entities.Deal", null)
                         .WithMany()
                         .HasForeignKey("DealsId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2513,7 +2513,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.User", null)
+                    b.HasOne("SalesPro.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2523,7 +2523,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.User", null)
+                    b.HasOne("SalesPro.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2540,7 +2540,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         .IsRequired()
                         .HasConstraintName("fk_user_roles_roles_role_id");
 
-                    b.HasOne("OnlineSales.Entities.User", null)
+                    b.HasOne("SalesPro.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2550,7 +2550,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.User", null)
+                    b.HasOne("SalesPro.Entities.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2558,16 +2558,16 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                         .HasConstraintName("fk_user_tokens_users_user_id");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Comment", b =>
+            modelBuilder.Entity("SalesPro.Entities.Comment", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", "Contact")
+                    b.HasOne("SalesPro.Entities.Contact", "Contact")
                         .WithMany()
                         .HasForeignKey("ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_comment_contact_contact_id");
 
-                    b.HasOne("OnlineSales.Entities.Comment", "Parent")
+                    b.HasOne("SalesPro.Entities.Comment", "Parent")
                         .WithMany()
                         .HasForeignKey("ParentId")
                         .HasConstraintName("fk_comment_comment_parent_id");
@@ -2577,22 +2577,22 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Parent");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Contact", b =>
+            modelBuilder.Entity("SalesPro.Entities.Contact", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Account", "Account")
+                    b.HasOne("SalesPro.Entities.Account", "Account")
                         .WithMany("Contacts")
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .HasConstraintName("fk_contact_account_account_id");
 
-                    b.HasOne("OnlineSales.Entities.Domain", "Domain")
+                    b.HasOne("SalesPro.Entities.Domain", "Domain")
                         .WithMany("Contacts")
                         .HasForeignKey("DomainId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired()
                         .HasConstraintName("fk_contact_domain_domain_id");
 
-                    b.HasOne("OnlineSales.Entities.Unsubscribe", "Unsubscribe")
+                    b.HasOne("SalesPro.Entities.Unsubscribe", "Unsubscribe")
                         .WithMany()
                         .HasForeignKey("UnsubscribeId")
                         .OnDelete(DeleteBehavior.SetNull)
@@ -2605,16 +2605,16 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Unsubscribe");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ContactEmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.ContactEmailSchedule", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", "Contact")
+                    b.HasOne("SalesPro.Entities.Contact", "Contact")
                         .WithMany()
                         .HasForeignKey("ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_contact_email_schedule_contact_contact_id");
 
-                    b.HasOne("OnlineSales.Entities.EmailSchedule", "Schedule")
+                    b.HasOne("SalesPro.Entities.EmailSchedule", "Schedule")
                         .WithMany()
                         .HasForeignKey("ScheduleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2626,28 +2626,28 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Schedule");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Deal", b =>
+            modelBuilder.Entity("SalesPro.Entities.Deal", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Account", "Account")
+                    b.HasOne("SalesPro.Entities.Account", "Account")
                         .WithMany("Deals")
                         .HasForeignKey("AccountId")
                         .HasConstraintName("fk_deal_account_account_id");
 
-                    b.HasOne("OnlineSales.Entities.DealPipeline", "DealPipeline")
+                    b.HasOne("SalesPro.Entities.DealPipeline", "DealPipeline")
                         .WithMany()
                         .HasForeignKey("DealPipelineId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_deal_deal_pipeline_deal_pipeline_id");
 
-                    b.HasOne("OnlineSales.Entities.DealPipelineStage", "DealPipelineStage")
+                    b.HasOne("SalesPro.Entities.DealPipelineStage", "DealPipelineStage")
                         .WithMany()
                         .HasForeignKey("DealPipelineStageId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_deal_deal_pipeline_stage_deal_pipeline_stage_id");
 
-                    b.HasOne("OnlineSales.Entities.User", "CreatedBy")
+                    b.HasOne("SalesPro.Entities.User", "CreatedBy")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2663,9 +2663,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("DealPipelineStage");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.DealPipelineStage", b =>
+            modelBuilder.Entity("SalesPro.Entities.DealPipelineStage", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.DealPipeline", "DealPipeline")
+                    b.HasOne("SalesPro.Entities.DealPipeline", "DealPipeline")
                         .WithMany("PipelineStages")
                         .HasForeignKey("DealPipelineId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2675,19 +2675,19 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("DealPipeline");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Discount", b =>
+            modelBuilder.Entity("SalesPro.Entities.Discount", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Order", "Order")
+                    b.HasOne("SalesPro.Entities.Order", "Order")
                         .WithMany("Discounts")
                         .HasForeignKey("OrderId")
                         .HasConstraintName("fk_discount_order_order_id");
 
-                    b.HasOne("OnlineSales.Entities.OrderItem", "OrderItem")
+                    b.HasOne("SalesPro.Entities.OrderItem", "OrderItem")
                         .WithOne("Discount")
-                        .HasForeignKey("OnlineSales.Entities.Discount", "OrderItemId")
+                        .HasForeignKey("SalesPro.Entities.Discount", "OrderItemId")
                         .HasConstraintName("fk_discount_order_item_order_item_id");
 
-                    b.HasOne("OnlineSales.Entities.Promotion", "Promotion")
+                    b.HasOne("SalesPro.Entities.Promotion", "Promotion")
                         .WithMany()
                         .HasForeignKey("PromotionId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2701,9 +2701,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Promotion");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Domain", b =>
+            modelBuilder.Entity("SalesPro.Entities.Domain", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Account", "Account")
+                    b.HasOne("SalesPro.Entities.Account", "Account")
                         .WithMany("Domains")
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -2712,9 +2712,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Account");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailSchedule", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.EmailGroup", "Group")
+                    b.HasOne("SalesPro.Entities.EmailGroup", "Group")
                         .WithMany()
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2724,9 +2724,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Group");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailTemplate", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailTemplate", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.EmailGroup", "EmailGroup")
+                    b.HasOne("SalesPro.Entities.EmailGroup", "EmailGroup")
                         .WithMany("EmailTemplates")
                         .HasForeignKey("EmailGroupId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2736,9 +2736,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("EmailGroup");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.LinkLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.LinkLog", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Link", "Link")
+                    b.HasOne("SalesPro.Entities.Link", "Link")
                         .WithMany()
                         .HasForeignKey("LinkId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2748,9 +2748,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Link");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Order", b =>
+            modelBuilder.Entity("SalesPro.Entities.Order", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", "Contact")
+                    b.HasOne("SalesPro.Entities.Contact", "Contact")
                         .WithMany("Orders")
                         .HasForeignKey("ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2760,9 +2760,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Contact");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.OrderItem", b =>
+            modelBuilder.Entity("SalesPro.Entities.OrderItem", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Order", "Order")
+                    b.HasOne("SalesPro.Entities.Order", "Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -2772,9 +2772,9 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Unsubscribe", b =>
+            modelBuilder.Entity("SalesPro.Entities.Unsubscribe", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", "Contact")
+                    b.HasOne("SalesPro.Entities.Contact", "Contact")
                         .WithMany()
                         .HasForeignKey("ContactId")
                         .HasConstraintName("fk_unsubscribe_contact_contact_id");
@@ -2782,7 +2782,7 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Contact");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Account", b =>
+            modelBuilder.Entity("SalesPro.Entities.Account", b =>
                 {
                     b.Navigation("Contacts");
 
@@ -2791,34 +2791,34 @@ namespace SalesPro.Plugin.TestPlugin.Migrations
                     b.Navigation("Domains");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Contact", b =>
+            modelBuilder.Entity("SalesPro.Entities.Contact", b =>
                 {
                     b.Navigation("Orders");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.DealPipeline", b =>
+            modelBuilder.Entity("SalesPro.Entities.DealPipeline", b =>
                 {
                     b.Navigation("PipelineStages");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Domain", b =>
+            modelBuilder.Entity("SalesPro.Entities.Domain", b =>
                 {
                     b.Navigation("Contacts");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailGroup", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailGroup", b =>
                 {
                     b.Navigation("EmailTemplates");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Order", b =>
+            modelBuilder.Entity("SalesPro.Entities.Order", b =>
                 {
                     b.Navigation("Discounts");
 
                     b.Navigation("OrderItems");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.OrderItem", b =>
+            modelBuilder.Entity("SalesPro.Entities.OrderItem", b =>
                 {
                     b.Navigation("Discount");
                 });

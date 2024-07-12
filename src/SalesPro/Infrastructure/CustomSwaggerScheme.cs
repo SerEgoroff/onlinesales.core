@@ -21,7 +21,7 @@ namespace SalesPro.Infrastructure
 
         public void Apply(OpenApiSchema schema, SchemaFilterContext context)
         {
-            if (context.Type.Namespace!.Contains("OnlineSales") && schema.Properties.Any())
+            if (context.Type.Namespace!.Contains("SalesPro") && schema.Properties.Any())
             {
                 var properties = context.Type.GetProperties();
                 foreach (var propertySchema in schema.Properties)

@@ -74,7 +74,7 @@ public class TaskTests : BaseTestAutoLogin
 
         await SyncElasticSearch();
 
-        CountDocumentsInIndex("onlinesales-test-dealpipeline").Should().Be(esSyncBatchSize * 2);
+        CountDocumentsInIndex("salespro-test-dealpipeline").Should().Be(esSyncBatchSize * 2);
     }
 
     [Fact]
@@ -88,13 +88,13 @@ public class TaskTests : BaseTestAutoLogin
 
         await SyncElasticSearch();
 
-        CountDocumentsInIndex("onlinesales-test-dealpipeline").Should().Be(dataSize);
+        CountDocumentsInIndex("salespro-test-dealpipeline").Should().Be(dataSize);
 
-        App.GetElasticClient().Indices.Delete("onlinesales-test-dealpipeline");
+        App.GetElasticClient().Indices.Delete("salespro-test-dealpipeline");
 
         await SyncElasticSearch();
 
-        CountDocumentsInIndex("onlinesales-test-dealpipeline").Should().Be(dataSize);
+        CountDocumentsInIndex("salespro-test-dealpipeline").Should().Be(dataSize);
     }
 
     private async Task CheckIfTaskNotRunning(string taskName)

@@ -25,7 +25,7 @@ namespace SalesPro.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("OnlineSales.Entities.ChangeLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.ChangeLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -62,7 +62,7 @@ namespace SalesPro.Migrations
                     b.ToTable("change_log", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ChangeLogTaskLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.ChangeLogTaskLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -106,7 +106,7 @@ namespace SalesPro.Migrations
                     b.ToTable("change_log_task_log", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Comment", b =>
+            modelBuilder.Entity("SalesPro.Entities.Comment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -178,7 +178,7 @@ namespace SalesPro.Migrations
                     b.ToTable("comment", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Contact", b =>
+            modelBuilder.Entity("SalesPro.Entities.Contact", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -270,7 +270,7 @@ namespace SalesPro.Migrations
                     b.ToTable("contact", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ContactEmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.ContactEmailSchedule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -327,7 +327,7 @@ namespace SalesPro.Migrations
                     b.ToTable("contact_email_schedule", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Domain", b =>
+            modelBuilder.Entity("SalesPro.Entities.Domain", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -395,7 +395,7 @@ namespace SalesPro.Migrations
                     b.ToTable("domain", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailGroup", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailGroup", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -444,7 +444,7 @@ namespace SalesPro.Migrations
                     b.ToTable("email_group", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -519,7 +519,7 @@ namespace SalesPro.Migrations
                     b.ToTable("email_log", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailSchedule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -570,7 +570,7 @@ namespace SalesPro.Migrations
                     b.ToTable("email_schedule", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailTemplate", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailTemplate", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -654,7 +654,7 @@ namespace SalesPro.Migrations
                     b.ToTable("email_template", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Image", b =>
+            modelBuilder.Entity("SalesPro.Entities.Image", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -722,7 +722,7 @@ namespace SalesPro.Migrations
                     b.ToTable("image", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.IpDetails", b =>
+            modelBuilder.Entity("SalesPro.Entities.IpDetails", b =>
                 {
                     b.Property<string>("Ip")
                         .HasColumnType("text")
@@ -759,7 +759,7 @@ namespace SalesPro.Migrations
                     b.ToTable("ip_details", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Link", b =>
+            modelBuilder.Entity("SalesPro.Entities.Link", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -817,7 +817,7 @@ namespace SalesPro.Migrations
                     b.ToTable("link", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.LinkLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.LinkLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -860,7 +860,7 @@ namespace SalesPro.Migrations
                     b.ToTable("link_log", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Order", b =>
+            modelBuilder.Entity("SalesPro.Entities.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -956,7 +956,7 @@ namespace SalesPro.Migrations
                     b.ToTable("order", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.OrderItem", b =>
+            modelBuilder.Entity("SalesPro.Entities.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1033,7 +1033,7 @@ namespace SalesPro.Migrations
                     b.ToTable("order_item", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Post", b =>
+            modelBuilder.Entity("SalesPro.Entities.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1135,7 +1135,7 @@ namespace SalesPro.Migrations
                     b.ToTable("post", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.TaskExecutionLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.TaskExecutionLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -1174,14 +1174,14 @@ namespace SalesPro.Migrations
                     b.ToTable("task_execution_log", (string)null);
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Comment", b =>
+            modelBuilder.Entity("SalesPro.Entities.Comment", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Comment", "Parent")
+                    b.HasOne("SalesPro.Entities.Comment", "Parent")
                         .WithMany()
                         .HasForeignKey("ParentId")
                         .HasConstraintName("fk_comment_comment_parent_id");
 
-                    b.HasOne("OnlineSales.Entities.Post", "Post")
+                    b.HasOne("SalesPro.Entities.Post", "Post")
                         .WithMany("Comments")
                         .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1193,16 +1193,16 @@ namespace SalesPro.Migrations
                     b.Navigation("Post");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.ContactEmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.ContactEmailSchedule", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", "Contact")
+                    b.HasOne("SalesPro.Entities.Contact", "Contact")
                         .WithMany()
                         .HasForeignKey("ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("fk_contact_email_schedule_contact_contact_id");
 
-                    b.HasOne("OnlineSales.Entities.EmailSchedule", "Schedule")
+                    b.HasOne("SalesPro.Entities.EmailSchedule", "Schedule")
                         .WithMany()
                         .HasForeignKey("ScheduleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1214,9 +1214,9 @@ namespace SalesPro.Migrations
                     b.Navigation("Schedule");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailSchedule", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailSchedule", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.EmailGroup", "Group")
+                    b.HasOne("SalesPro.Entities.EmailGroup", "Group")
                         .WithMany()
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1226,9 +1226,9 @@ namespace SalesPro.Migrations
                     b.Navigation("Group");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.EmailTemplate", b =>
+            modelBuilder.Entity("SalesPro.Entities.EmailTemplate", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.EmailGroup", "Group")
+                    b.HasOne("SalesPro.Entities.EmailGroup", "Group")
                         .WithMany()
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1238,9 +1238,9 @@ namespace SalesPro.Migrations
                     b.Navigation("Group");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.LinkLog", b =>
+            modelBuilder.Entity("SalesPro.Entities.LinkLog", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Link", "Link")
+                    b.HasOne("SalesPro.Entities.Link", "Link")
                         .WithMany()
                         .HasForeignKey("LinkId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1250,9 +1250,9 @@ namespace SalesPro.Migrations
                     b.Navigation("Link");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Order", b =>
+            modelBuilder.Entity("SalesPro.Entities.Order", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Contact", "Contact")
+                    b.HasOne("SalesPro.Entities.Contact", "Contact")
                         .WithMany()
                         .HasForeignKey("ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1262,9 +1262,9 @@ namespace SalesPro.Migrations
                     b.Navigation("Contact");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.OrderItem", b =>
+            modelBuilder.Entity("SalesPro.Entities.OrderItem", b =>
                 {
-                    b.HasOne("OnlineSales.Entities.Order", "Contact")
+                    b.HasOne("SalesPro.Entities.Order", "Contact")
                         .WithMany()
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1274,7 +1274,7 @@ namespace SalesPro.Migrations
                     b.Navigation("Contact");
                 });
 
-            modelBuilder.Entity("OnlineSales.Entities.Post", b =>
+            modelBuilder.Entity("SalesPro.Entities.Post", b =>
                 {
                     b.Navigation("Comments");
                 });

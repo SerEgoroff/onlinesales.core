@@ -408,7 +408,7 @@ public class Program
         var openApiInfo = new OpenApiInfo()
         {
             Version = typeof(Program).Assembly.GetName().Version!.ToString() ?? "1.0.0",
-            Title = "OnlineSales API",
+            Title = "SalesPro API",
         };
         var swaggerConfigurators = from p in PluginManager.GetPluginList()
                                    where p is ISwaggerConfigurator
