@@ -6,19 +6,19 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["src/OnlineSales/OnlineSales.csproj", "src/OnlineSales/"]
-RUN dotnet restore "src/OnlineSales/OnlineSales.csproj"
+COPY ["src/SalesPro/SalesPro.csproj", "src/SalesPro/"]
+RUN dotnet restore "src/SalesPro/SalesPro.csproj"
 COPY . .
 WORKDIR "/src"
-RUN dotnet build "OnlineSales.sln" -c Release -o /app/build
+RUN dotnet build "SalesPro.sln" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "./src/OnlineSales/OnlineSales.csproj" -c Release -o /app/publish /p:UseAppHost=false
-RUN dotnet publish "./plugins/OnlineSales.Plugin.EmailSync/OnlineSales.Plugin.EmailSync.csproj" -c Release -o /app/publish/plugins/OnlineSales.Plugin.EmailSync /p:UseAppHost=false
-RUN dotnet publish "./plugins/OnlineSales.Plugin.ReverseProxy/OnlineSales.Plugin.ReverseProxy.csproj" -c Release -o /app/publish/plugins/OnlineSales.Plugin.ReverseProxy /p:UseAppHost=false
-RUN dotnet publish "./plugins/OnlineSales.Plugin.SendGrid/OnlineSales.Plugin.SendGrid.csproj" -c Release -o /app/publish/plugins/OnlineSales.Plugin.SendGrid /p:UseAppHost=false
-RUN dotnet publish "./plugins/OnlineSales.Plugin.Sms/OnlineSales.Plugin.Sms.csproj" -c Release -o /app/publish/plugins/OnlineSales.Plugin.Sms /p:UseAppHost=false
-RUN dotnet publish "./plugins/OnlineSales.Plugin.Vsto/OnlineSales.Plugin.Vsto.csproj" -c Release -o /app/publish/plugins/OnlineSales.Plugin.Vsto /p:UseAppHost=false
+RUN dotnet publish "./src/SalesPro/SalesPro.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./plugins/SalesPro.Plugin.EmailSync/SalesPro.Plugin.EmailSync.csproj" -c Release -o /app/publish/plugins/SalesPro.Plugin.EmailSync /p:UseAppHost=false
+RUN dotnet publish "./plugins/SalesPro.Plugin.ReverseProxy/SalesPro.Plugin.ReverseProxy.csproj" -c Release -o /app/publish/plugins/SalesPro.Plugin.ReverseProxy /p:UseAppHost=false
+RUN dotnet publish "./plugins/SalesPro.Plugin.SendGrid/SalesPro.Plugin.SendGrid.csproj" -c Release -o /app/publish/plugins/SalesPro.Plugin.SendGrid /p:UseAppHost=false
+RUN dotnet publish "./plugins/SalesPro.Plugin.Sms/SalesPro.Plugin.Sms.csproj" -c Release -o /app/publish/plugins/SalesPro.Plugin.Sms /p:UseAppHost=false
+RUN dotnet publish "./plugins/SalesPro.Plugin.Vsto/SalesPro.Plugin.Vsto.csproj" -c Release -o /app/publish/plugins/SalesPro.Plugin.Vsto /p:UseAppHost=false
 
 FROM base AS final
 RUN apk add --no-cache icu-libs
@@ -27,4 +27,4 @@ ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 WORKDIR /app
 COPY --from=publish /app/publish .
 HEALTHCHECK --interval=1m --timeout=10s --retries=3 CMD wget --spider --tries=1 --no-verbose http://localhost:80/api/version || exit 1
-ENTRYPOINT ["dotnet", "OnlineSales.dll"]
+ENTRYPOINT ["dotnet", "SalesPro.dll"]

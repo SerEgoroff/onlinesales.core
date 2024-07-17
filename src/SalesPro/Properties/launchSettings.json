@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "OnlineSales": {
+    "SalesPro": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

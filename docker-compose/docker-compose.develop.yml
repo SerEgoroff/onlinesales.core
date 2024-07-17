@@ -33,7 +33,7 @@ services:
     environment:
       TZ: 'UTC'
       PGTZ: 'UTC'
-      POSTGRES_DB: onlinesales
+      POSTGRES_DB: salespro
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
