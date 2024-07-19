@@ -1,7 +1,7 @@
-# OnlineSales - Extendable Headless CMS
+# SalesPro - Extendable Headless CMS
 
 - [Overview](#overview)
-- [Sites powered by OnlineSales](#sites-powered-by-onlinesales)
+- [Sites powered by SalesPro](#sites-powered-by-salespro)
 - [Getting started](#getting-started)
     - [Overview of the Solution Structure](#overview-solution-structure)
     - [Pre-requisites for development environment setup](#prerequisites)
@@ -18,10 +18,10 @@
 <a id="overview"></a>
 ## Overview
 
-OnlineSale is a light-weight, extendable headless CMS written in .NET 7. It is used to manage content for software product sites as well as automate processes like free trial activation, license generation, automated sales of licenses from website, customer journey tracking and more.
+SalePro is a light-weight, extendable headless CMS written in .NET 7. It is used to manage content for software product sites as well as automate processes like free trial activation, license generation, automated sales of licenses from website, customer journey tracking and more.
 
-<a id="sites-powered-by-onlinesales"></a>
-## Sites powered by OnlineSales
+<a id="sites-powered-by-salespro"></a>
+## Sites powered by SalesPro
 
 - [XLTools Add-in for Excel](https://xltools.net) - powerful Excel add-in designed for business users
 - [GIAnalyzer Add-in for Excel](https://gianalyzer.com) - turns your Excel into a powerful financial software
@@ -33,9 +33,9 @@ OnlineSale is a light-weight, extendable headless CMS written in .NET 7. It is u
 <a id="overview-solution-structure"></a>
 ### Overview of the Solution Structure
 
-* `OnlineSales` located at /src/OnlineSales folder is the core project which consists of reusable core functionalities described in [Project Overview](#overview).
+* `SalesPro` located at /src/SalesPro folder is the core project which consists of reusable core functionalities described in [Project Overview](#overview).
 
-* `OnlineSales.Tests` located at /tests/OnlineSales.Tests folder is the project which consists of automated unit and integration test suite for `OnlineSales` core project.
+* `SalesPro.Tests` located at /tests/SalesPro.Tests folder is the project which consists of automated unit and integration test suite for `SalesPro` core project.
 
 * `docker-compose` folder contains the .yml files to spin up docker containers to provide database and logging services for development and testing environments.
 
@@ -62,7 +62,7 @@ OnlineSale is a light-weight, extendable headless CMS written in .NET 7. It is u
 <a id="setup-docker-containers"></a>
 ### Setting up docker containers
 
-OnlineSales platform integrates with two databases initially.
+SalesPro platform integrates with two databases initially.
 1. PostgreSQL
 2. Elastic
 
@@ -126,7 +126,7 @@ It will maintain a `secrets.json` file internally to store any configuration.
 
 ##### How to use `Secret Manager` feature in Visual Studio:
 
-1. Right-click on `OnlineSales` project and click on `Manage User Secrets`.
+1. Right-click on `SalesPro` project and click on `Manage User Secrets`.
 
 2. Update the `secrets.json` file with required secrets in the format same as the `appsettings.json` file.
 
@@ -154,7 +154,7 @@ At pipeline runtime, secrets of `appsettings.json` file (or appsettings.unittest
 <a id="run-test-project"></a>
 ### Running automated test suite
 
-1. Locate the project `OnlineSales.Tests`.
+1. Locate the project `SalesPro.Tests`.
 
 2. Locate `appsettings.tests.json` file and verify the database credentials.
     * Configurations available in `appsettings.tests.json` file will replace the same configurations in `appsettings.json` file at run time.
@@ -175,7 +175,7 @@ At pipeline runtime, secrets of `appsettings.json` file (or appsettings.unittest
 <a id="plugin-integration"></a>
 ## Plugin integration
 
-* `OnlineSales` core project provides more generic and reusable functionalities, while a plugin project can be implemented to cater more specific requirements that may be provided by different clients.
+* `SalesPro` core project provides more generic and reusable functionalities, while a plugin project can be implemented to cater more specific requirements that may be provided by different clients.
 
 * Core project can be published and run as a CMS without integrating any plugin, but a plugin requires the core project to be up and running.
 
@@ -202,28 +202,28 @@ At pipeline runtime, secrets of `appsettings.json` file (or appsettings.unittest
 <a id="default-plugin"></a>
 ### Default plugins
 
-`OnlineSales` solution consists of a set of plugins that are already implemented.
-* `OnlineSales.Plugin.AzureAD` :
+`SalesPro` solution consists of a set of plugins that are already implemented.
+* `SalesPro.Plugin.AzureAD` :
 
-* `OnlineSales.Plugin.Email` : Implementation of a generic email service that can be configured to use any email service provider which supports SMTP protocol.
+* `SalesPro.Plugin.Email` : Implementation of a generic email service that can be configured to use any email service provider which supports SMTP protocol.
 
-* `OnlineSales.Plugin.Sms` : Implementation of a generic sms service configured to use sms gateways such as Amazon SNS, ShoutOut, NotifyLK.
+* `SalesPro.Plugin.Sms` : Implementation of a generic sms service configured to use sms gateways such as Amazon SNS, ShoutOut, NotifyLK.
 
-* `OnlineSales.Plugin.Vsto` :
+* `SalesPro.Plugin.Vsto` :
 
 
 <a id="new-plugin"></a>
 ### Adding a new plugin
 
 1. Create a new class library project.
-    * Project can be added to the `OnlineSales` solution or to a new solution depending on the requirement.
+    * Project can be added to the `SalesPro` solution or to a new solution depending on the requirement.
 
-2. Add `OnlineSales` core project as a dependency.
-    * If the new project is added to the `OnlineSales` solution, the dependency can be added as a project reference.
+2. Add `SalesPro` core project as a dependency.
+    * If the new project is added to the `SalesPro` solution, the dependency can be added as a project reference.
 
-    * If the project is added to a new solution, `OnlineSales` project dependency can be added as a nuget package reference.
+    * If the project is added to a new solution, `SalesPro` project dependency can be added as a nuget package reference.
 
-3. Add a new class inherited from `IPlugin` interface, which comes under `OnlineSales.Interfaces` namespace.
+3. Add a new class inherited from `IPlugin` interface, which comes under `SalesPro.Interfaces` namespace.
 
 4. Implement a new service based on the requirement and register it in the application's service collection.
 
@@ -238,7 +238,7 @@ At pipeline runtime, secrets of `appsettings.json` file (or appsettings.unittest
 6. To make plugin loading enabled add the plugin directory name to 'Plugins' section of 'appsettings.json' file
     * Example
         ```
-        "Plugins": [ "OnlineSales.Plugin.AzureAD", "OnlineSales.Plugin.Email" ],
+        "Plugins": [ "SalesPro.Plugin.AzureAD", "SalesPro.Plugin.Email" ],
         ```
 
 7. To make plugin loading disabled remove the plugin directory name from 'Plugins' section of 'appsettings.json' file
@@ -247,7 +247,7 @@ At pipeline runtime, secrets of `appsettings.json` file (or appsettings.unittest
 <a id="plugin-migrations"></a>
 ### Plugin-level migrations
 
-To extend the core project's database context, use the `PluginDbContextBase` abstract database context class that comes under `OnlineSales.Data` namespace, which inherited from the `PgDbContext` class which is the main database context of the core project.
+To extend the core project's database context, use the `PluginDbContextBase` abstract database context class that comes under `SalesPro.Data` namespace, which inherited from the `PgDbContext` class which is the main database context of the core project.
 * Create new models which are specific to the plugin requirement.
 
 * Create a new class inherited from `PluginDbContextBase` class and add `DbSet` type properties which map to database tables, for the newly created entities.
