@@ -6,7 +6,7 @@ public class TestContent : ContentCreateDto
     {
         Slug = $"test-slug{uid}";
         Type = "Test Template";
-        Author = "Peter Liapin";
+        Author = "John Doe";
         Title = $"Test Title (via test suit){uid}";
         Description = $"This is a sample test description{uid}";
         Body = $"This is a sample Content{uid}";

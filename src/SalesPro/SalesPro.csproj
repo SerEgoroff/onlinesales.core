@@ -16,9 +16,9 @@
     <Company>WavePoint Co. Ltd.</Company>
     <Product>SalesPro</Product>
     <Copyright>@ 2022 WavePoint Co. Ltd.</Copyright>
-    <PackageProjectUrl>https://github.com/peterliapin/SalesPro-backend</PackageProjectUrl>
+    <PackageProjectUrl></PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/peterliapin/SalesPro-backend</RepositoryUrl>
+    <RepositoryUrl></RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>sales, commerce, backend</PackageTags>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
