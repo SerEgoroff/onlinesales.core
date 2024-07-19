@@ -1,8 +1,4 @@
-﻿// <copyright file="LockService.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Medallion.Threading.Postgres;
+﻿using Medallion.Threading.Postgres;
 using SalesPro.Configuration;
 using SalesPro.Interfaces;
 

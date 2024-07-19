@@ -1,8 +1,4 @@
-﻿// <copyright file="AmazonSnsService.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Amazon;
+﻿using Amazon;
 using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 using SalesPro.Plugin.Sms.Configuration;

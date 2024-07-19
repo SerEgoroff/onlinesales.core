@@ -2,12 +2,13 @@
 <RuleSet Name="SalesPro ruleset for code analyzers" ToolsVersion="14.0">
   <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
     <Rule Id="CS1591" Action="None" /> <!-- Missing XML comment for publicly visible type or member -->
-  </Rules>    
+  </Rules>
   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
     <Rule Id="SA0001" Action="None" /> <!-- XML comments -->
     <Rule Id="S125" Action="None" /> <!-- Remove this commented out code -->
     <Rule Id="SA1518" Action="None" /> <!-- Code should not contain blank lines at the end of the file -->
     <Rule Id="SA1600" Action="None" /> <!-- Elements should be documented -->
+    <Rule Id="SA1633" Action="None" /> <!-- File should have header -->
     <Rule Id="SA1028" Action="None" /> <!-- Code should not contain trailing whitespace -->
     <Rule Id="S1118" Action="None" /> <!-- Add a 'protected' constructor or the 'static' keyword to the class declaration -->
     <Rule Id="SA1101" Action="None" /> <!-- Prefix local calls with this -->

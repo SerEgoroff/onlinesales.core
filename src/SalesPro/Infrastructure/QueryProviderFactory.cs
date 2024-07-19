@@ -1,8 +1,4 @@
-﻿// <copyright file="QueryProviderFactory.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Web;
+﻿using System.Web;
 using Microsoft.Extensions.Options;
 using Nest;
 using SalesPro.Configuration;

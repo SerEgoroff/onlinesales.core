@@ -1,8 +1,4 @@
-﻿// <copyright file="PluginDbContextBase.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SalesPro.Interfaces;
 

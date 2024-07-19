@@ -1,8 +1,4 @@
-﻿// <copyright file="SendgridController.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

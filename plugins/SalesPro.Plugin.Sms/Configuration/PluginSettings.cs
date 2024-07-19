@@ -1,8 +1,4 @@
-﻿// <copyright file="PluginSettings.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-namespace SalesPro.Plugin.Sms.Configuration;
+﻿namespace SalesPro.Plugin.Sms.Configuration;
 
 public class PluginConfig
 {

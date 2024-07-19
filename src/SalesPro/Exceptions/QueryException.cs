@@ -1,7 +1,4 @@
-﻿// <copyright file="QueryException.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using Microsoft.AspNetCore.WebUtilities;
 
 namespace SalesPro.Exceptions

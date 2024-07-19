@@ -1,7 +1,3 @@
-// <copyright file="SwaggerEntitiesFilter.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using SalesPro.Configuration;

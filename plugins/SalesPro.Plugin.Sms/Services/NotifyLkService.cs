@@ -1,8 +1,4 @@
-﻿// <copyright file="NotifyLkService.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using Microsoft.AspNetCore.WebUtilities;
 using SalesPro.Plugin.Sms.Configuration;
 using SalesPro.Plugin.Sms.Exceptions;

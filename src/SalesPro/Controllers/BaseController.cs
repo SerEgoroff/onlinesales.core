@@ -1,8 +1,4 @@
-﻿// <copyright file="BaseController.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Collections;
+﻿using System.Collections;
 using System.Reflection;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;

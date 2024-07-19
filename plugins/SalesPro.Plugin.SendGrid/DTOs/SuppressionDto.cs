@@ -1,8 +1,4 @@
-﻿// <copyright file="SuppressionDto.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using SalesPro.Helpers;
+﻿using SalesPro.Helpers;
 
 namespace SalesPro.Plugin.SendGrid.DTOs;
 

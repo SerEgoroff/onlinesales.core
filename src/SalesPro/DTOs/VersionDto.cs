@@ -1,8 +1,4 @@
-﻿// <copyright file="VersionDto.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Microsoft.Extensions.Primitives;
+﻿using Microsoft.Extensions.Primitives;
 
 namespace SalesPro.DTOs;
 public class VersionDto

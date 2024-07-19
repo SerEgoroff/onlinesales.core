@@ -1,8 +1,4 @@
-﻿// <copyright file="BaseTest.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Globalization;
+﻿using System.Globalization;
 using System.Net.Http.Headers;
 using System.Reflection;
 using System.Text;

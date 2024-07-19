@@ -1,8 +1,4 @@
-﻿// <copyright file="VstoLocalLinksWatcher.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Quartz.Util;
 using SalesPro.Data;

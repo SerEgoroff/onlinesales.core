@@ -1,8 +1,4 @@
-﻿// <copyright file="IdentityException.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Text;
+﻿using System.Text;
 using Microsoft.AspNetCore.Identity;
 
 namespace SalesPro.Exceptions;

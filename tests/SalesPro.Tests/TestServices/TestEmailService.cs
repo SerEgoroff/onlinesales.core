@@ -1,8 +1,4 @@
-﻿// <copyright file="TestEmailService.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
 using SalesPro.Interfaces;
 
 namespace SalesPro.Tests.TestServices

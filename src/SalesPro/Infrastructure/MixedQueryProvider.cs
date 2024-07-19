@@ -1,8 +1,4 @@
-﻿// <copyright file="MixedQueryProvider.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Reflection;
+﻿using System.Reflection;
 using Nest;
 using SalesPro.Entities;
 using SalesPro.Interfaces;

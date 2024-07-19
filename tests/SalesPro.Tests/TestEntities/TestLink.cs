@@ -1,8 +1,4 @@
-﻿// <copyright file="TestLink.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-namespace SalesPro.Tests.TestEntities;
+﻿namespace SalesPro.Tests.TestEntities;
 
 public class TestLink : LinkCreateDto
 {

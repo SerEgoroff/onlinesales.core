@@ -1,8 +1,4 @@
-﻿// <copyright file="PromotionTests.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using SalesPro.Tests.TestEntities;
+﻿using SalesPro.Tests.TestEntities;
 
 namespace SalesPro.Tests;
 public class PromotionTests : SimpleTableTests<Promotion, TestPromotion, PromotionUpdateDto, IEntityService<Promotion>>

@@ -1,8 +1,4 @@
-﻿// <copyright file="SwaggerExampleAttribute.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-namespace SalesPro.DataAnnotations;
+﻿namespace SalesPro.DataAnnotations;
 
 public class SwaggerExampleAttribute<T> : Attribute
 {

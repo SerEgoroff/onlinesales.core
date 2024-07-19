@@ -1,8 +1,4 @@
-﻿// <copyright file="TestAccountExternalService.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using SalesPro.Geography;
+﻿using SalesPro.Geography;
 using SalesPro.Interfaces;
 
 namespace SalesPro.Tests.TestServices;

@@ -1,8 +1,4 @@
-﻿// <copyright file="VariablesService.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using SalesPro.Infrastructure;
+﻿using SalesPro.Infrastructure;
 using SalesPro.Interfaces;
 
 namespace SalesPro.Services;

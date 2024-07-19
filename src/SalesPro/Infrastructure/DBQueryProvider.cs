@@ -1,8 +1,4 @@
-﻿// <copyright file="DBQueryProvider.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Data;
+﻿using System.Data;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;

@@ -1,7 +1,3 @@
-// <copyright file="AutoMapperProfiles.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
 using AutoMapper;
 using SalesPro.Plugin.EmailSync.DTOs;
 using SalesPro.Plugin.EmailSync.Entities;

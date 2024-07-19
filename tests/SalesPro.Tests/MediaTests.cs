@@ -1,8 +1,4 @@
-﻿// <copyright file="MediaTests.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 
 namespace SalesPro.Tests;

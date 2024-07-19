@@ -1,8 +1,4 @@
-﻿// <copyright file="WebhookEventDto.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace SalesPro.Plugin.SendGrid.DTOs;
 

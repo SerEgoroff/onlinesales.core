@@ -1,8 +1,4 @@
-﻿// <copyright file="TestData.cs" company="WavePoint Co. Ltd.">
-// Licensed under the MIT license. See LICENSE file in the samples root for full license information.
-// </copyright>
-
-using SalesPro.Plugin.TestPlugin.Entities;
+﻿using SalesPro.Plugin.TestPlugin.Entities;
 
 namespace SalesPro.Plugin.TestPlugin.TestData;
 public class ChangeLogMigrationsTestData
