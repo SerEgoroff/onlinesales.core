@@ -66,18 +66,18 @@ jobs:
       if: ${{ !contains(steps.branch_name.outputs.value, 'pre') }} 
       with:
         context: ./
-        file: src/OnlineSales/Dockerfile
+        file: src/SalesPro/Dockerfile
         push: true
-        tags: wavepoint/onlinesales:latest, wavepoint/onlinesales:${{ steps.branch_name.outputs.value }}
+        tags: wavepoint/salespro:latest, wavepoint/salespro:${{ steps.branch_name.outputs.value }}
         
     - name: Build & Push Docker image without latest tag
       uses: docker/build-push-action@v3
       if: ${{ contains(steps.branch_name.outputs.value, 'pre') }} 
       with:
         context: ./
-        file: src/OnlineSales/Dockerfile
+        file: src/SalesPro/Dockerfile
         push: true
-        tags: wavepoint/onlinesales:develop, wavepoint/onlinesales:${{ steps.branch_name.outputs.value }}
+        tags: wavepoint/salespro:develop, wavepoint/salespro:${{ steps.branch_name.outputs.value }}
     
     - name: Publish to NuGet
       if: success()
