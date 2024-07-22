@@ -68,7 +68,7 @@ jobs:
         context: ./
         file: src/SalesPro/Dockerfile
         push: true
-        tags: wavepoint/salespro:latest, wavepoint/salespro:${{ steps.branch_name.outputs.value }}
+        tags: kraysoft/salespro:latest, kraysoft/salespro:${{ steps.branch_name.outputs.value }}
         
     - name: Build & Push Docker image without latest tag
       uses: docker/build-push-action@v3
@@ -77,7 +77,7 @@ jobs:
         context: ./
         file: src/SalesPro/Dockerfile
         push: true
-        tags: wavepoint/salespro:develop, wavepoint/salespro:${{ steps.branch_name.outputs.value }}
+        tags: kraysoft/salespro:develop, kraysoft/salespro:${{ steps.branch_name.outputs.value }}
     
     - name: Publish to NuGet
       if: success()

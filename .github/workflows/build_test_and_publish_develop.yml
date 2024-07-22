@@ -61,4 +61,4 @@ jobs:
         context: ./
         file: src/SalesPro/Dockerfile
         push: true
-        tags: wavepoint/salespro:develop
+        tags: kraysoft/salespro:develop

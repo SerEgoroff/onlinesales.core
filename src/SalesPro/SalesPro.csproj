@@ -12,10 +12,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>SalesPro</PackageId>
     <Title>SalesPro</Title>
-    <Authors>WavePoint Co. Ltd.</Authors>
-    <Company>WavePoint Co. Ltd.</Company>
+    <Authors>Kray Soft</Authors>
+    <Company>Kray Soft</Company>
     <Product>SalesPro</Product>
-    <Copyright>@ 2022 WavePoint Co. Ltd.</Copyright>
+    <Copyright>@ 2024 Kray Soft</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl></RepositoryUrl>
