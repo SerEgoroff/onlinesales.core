@@ -23,8 +23,9 @@ RUN dotnet publish "./plugins/SalesPro.Plugin.Vsto/SalesPro.Plugin.Vsto.csproj" 
 FROM base AS final
 RUN apk add --no-cache icu-libs
 RUN apk add --no-cache icu-data-full
-ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+RUN apk add --no-cache curl bash
 WORKDIR /app
+RUN curl -o ./wait-for-it.sh https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && chmod +x ./wait-for-it.sh
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 COPY --from=publish /app/publish .
 HEALTHCHECK --interval=1m --timeout=10s --retries=3 CMD wget --spider --tries=1 --no-verbose http://localhost:80/api/version || exit 1
-ENTRYPOINT ["dotnet", "SalesPro.dll"]

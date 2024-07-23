@@ -1,0 +1,65 @@
+version: '3.4'
+
+services:
+  salespro:
+    build:
+      context: ./
+      dockerfile: ./src/SalesPro/Dockerfile
+    container_name: salespro
+    depends_on:
+      - elastic
+      - kibana
+      - postgres
+    ports:
+      - 8000:80
+    environment:
+      POSTGRES__SERVER: postgres
+      ELASTIC__SERVER: elastic
+      CORS__ALLOWEDORIGINS__0: "http://localhost:8000"
+    restart: unless-stopped
+    command: ["/app/wait-for-it.sh", "postgres:5432", "-s", "-t", "0", "--", "/app/wait-for-it.sh", "elastic:9200", "-s", "-t", "0", "--", "dotnet", "SalesPro.dll"]
+
+  elastic:
+    container_name: elastic
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.6
+    ports:
+      - 9200:9200
+    volumes:
+      - elastic-data:/usr/share/elasticsearch/data
+    environment:
+      - xpack.security.enabled=false
+      - "discovery.type=single-node"
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+    restart: unless-stopped
+
+  kibana:
+    container_name: kibana
+    image: docker.elastic.co/kibana/kibana:7.17.6
+    ports:
+      - 5601:5601
+    depends_on:
+      - elastic
+    environment:
+      SERVER_REWRITEBASEPATH: true
+      SERVER_BASEPATH: /kibana
+      ELASTICSEARCH_HOSTS: '["http://elastic:9200"]'
+    restart: unless-stopped
+
+  postgres:
+    container_name: postgres
+    image: postgres:14.5
+    environment:
+      TZ: 'UTC'
+      PGTZ: 'UTC'
+      POSTGRES_DB: salespro
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  elastic-data:  
