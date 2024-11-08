@@ -33,6 +33,14 @@ public class ErrorsController : Controller
 
                 break;
 
+            case ArgumentException exception:
+                problemDetails = ProblemDetailsFactory.CreateProblemDetails(
+                    HttpContext,
+                    StatusCodes.Status422UnprocessableEntity);
+
+                problemDetails.Extensions[exception.ParamName ?? "unknownParam"] = exception.Message;
+                break;
+
             case TaskNotFoundException taskNotFoundException:
 
                 problemDetails = ProblemDetailsFactory.CreateProblemDetails(
