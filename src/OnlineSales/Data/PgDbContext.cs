@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql;
 using OnlineSales.Configuration;
 using OnlineSales.DataAnnotations;
 using OnlineSales.Entities;
@@ -215,8 +216,12 @@ public class PgDbContext : IdentityDbContext<User>
                 throw new MissingConfigurationException("Postgres configuration is mandatory.");
             }
 
+            var dataSourceBuilder = new NpgsqlDataSourceBuilder(postgresConfig.ConnectionString);
+            dataSourceBuilder.EnableDynamicJson();
+            var dataSource = dataSourceBuilder.Build();
+
             optionsBuilder.UseNpgsql(
-                postgresConfig.ConnectionString,
+                dataSource,
                 b => b.MigrationsHistoryTable("_migrations"))
                         .UseSnakeCaseNamingConvention()
                         .ReplaceService<IMigrationsSqlGenerator, CustomSqlServerMigrationsSqlGenerator>();
